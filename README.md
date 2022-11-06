@@ -1,4 +1,4 @@
-# Project2 - Curriculum Vitae
+# Project 2 - Curriculum Vitae
 
 Creation of a CV, integrating a mock-up design.
 
