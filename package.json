@@ -1,0 +1,23 @@
+{
+  "name": "cv-mock-up",
+  "version": "1.0.0",
+  "description": "Creation of a CV, integrating a mock-up design.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/input.scss:css/style.css",
+    "sass:watch": "sass --watch scss/input.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcHamacek/cv-mock-up.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MarcHamacek/cv-mock-up/issues"
+  },
+  "homepage": "https://github.com/MarcHamacek/cv-mock-up#readme"
+}
