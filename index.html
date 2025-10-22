@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>CV_JessicaLeroy</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -12,21 +12,19 @@
   </head>
 
   <body>
-    <div id="container">
+    <div class="container">
       <!--Partie gauche du CV-->
-      <aside id="cv_aside">
-        <header id="header_aside">
-          <p class="photo-profil-container">
-            <img
-              id="photo_profil"
-              src="images/profile-picture.png"
-              alt="John Doe"
-            />
-          </p>
+      <aside class="aside">
+        <header class="aside__header">
+          <img
+            class="aside__header--picture"
+            src="images/profile-picture.png"
+            alt="John Doe"
+          />
         </header>
-        <section id="contact">
-          <h3 class="titre_aside">contact</h3>
-          <address class="contact">
+        <section class="aside__block">
+          <h3 class="aside__block--title">contact</h3>
+          <address class="aside__block--contact">
             <p>Adresse <br />Paris, France</p>
             <br />
             <p>Téléphone <br />06 00 00 00 00</p>
@@ -38,9 +36,9 @@
             <p>Skype<br />@nom_utilisateur</p>
           </address>
         </section>
-        <section id="about">
-          <h3 class="titre_aside">à propos de moi</h3>
-          <article id="text_about">
+        <section class="aside__block">
+          <h3 class="aside__block--title">à propos de moi</h3>
+          <article class="aside__block--article mx-3-md mx-2-sm mx-1-xs">
             <p>
               Lorem ipsum dolor sit amet, consecteturadipiscing elit. Fusce
               eleifend, diam vitae faucibus varius, neque lectus viverra justo,
@@ -53,19 +51,19 @@
             </p>
           </article>
         </section>
-        <section id="loisirs">
-          <h3 class="titre_aside_loisirs">loisirs</h3>
-          <p id="icons_loisirs">
+        <section class="aside__block">
+          <h3 class="aside__block--title mt-3">loisirs</h3>
+          <p class="aside__block--icons mx-3-md mx-2-sm mx-1-xs">
             <img
-              class="images_loisirs"
+              class="aside__block--icon"
               src="images/swimming.svg"
               alt="swimming"
             /><img
-              class="images_biking"
+              class="aside__block--icon"
               src="images/biking.svg"
               alt="biking"
             /><img
-              class="images_loisirs"
+              class="aside__block--icon"
               src="images/table-tennis.svg"
               alt="table-tennis"
             />
@@ -73,27 +71,29 @@
         </section>
       </aside>
       <!--Partie principale du CV-->
-      <main id="cv_main">
-        <header id="presentation">
-          <p id="prenom_nom"><strong id="prenom">john</strong> doe</p>
-          <p id="poste">
-            <em id="bordure_poste">Dével</em>oppeur web freelance
+      <main class="main">
+        <header class="main__header mx-3-md mx-2-sm mx-1-xs">
+          <p class="main__header--name">
+            <strong class="main__header--firstname">john</strong>
+            doe
+          </p>
+          <p class="main__header--job">
+            <em class="main__header--border_job">Dével</em>oppeur web freelance
           </p>
         </header>
-        <section id="formation">
-          <h1 class="titre_main">
+        <section class="main__content mx-3-md mx-2-sm mx-1-xs">
+          <h1 class="main__content--title">
             <i class="fa fa-graduation-cap" aria-hidden="true"></i>formation
           </h1>
-          <section id="formation_1">
-            <aside class="date_aside">
-              <p>
-                <i class="puce_1"></i><strong class="date">2016 - 2017</strong>
-              </p>
-              <p class="liste_ville">Paris</p>
+          <section class="main__content--item">
+            <aside class="main__content--item_date">
+              <i class="main__content--item_list"></i
+              ><strong class="text-bold">2016 - 2017</strong>
+              <p class="main__content--item_city">Paris</p>
             </aside>
-            <article class="poste-container">
-              <h2 class="sous_titre">openclassrooms</h2>
-              <p class="poste">Junior Web Developer</p>
+            <article class="main__content--item_article">
+              <h2 class="main__content--item_title">openclassrooms</h2>
+              <p class="main__content--item_job">Junior Web Developer</p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
@@ -101,16 +101,17 @@
               </p>
             </article>
           </section>
-          <section id="formation_2">
-            <aside class="date_aside">
+          <section class="main__content--item">
+            <aside class="main__content--item_date">
               <p>
-                <i class="puce_2"></i><strong class="date">2014 - 2016</strong>
+                <i class="puce_2"></i
+                ><strong class="text-bold">2014 - 2016</strong>
               </p>
-              <p class="liste_ville">Orléans</p>
+              <p class="main__content--item_city">Orléans</p>
             </aside>
-            <article class="poste-container">
-              <h2 class="sous_titre">university of lorem</h2>
-              <p class="poste">Graphique Designer</p>
+            <article class="main__content--item_article">
+              <h2 class="main__content--item_title">university of lorem</h2>
+              <p class="main__content--item_job">Graphique Designer</p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
@@ -119,21 +120,22 @@
             </article>
           </section>
         </section>
-        <section id="exp_professionelle">
-          <h1 class="titre_main">
+        <section class="main__content mx-3-md mx-2-sm mx-1-xs">
+          <h1 class="main__content--title">
             <i class="fa fa-briefcase" aria-hidden="true"></i>expérience
             professionelle
           </h1>
-          <section id="exp_1">
-            <aside class="date_aside">
+          <section class="main__content--item">
+            <aside class="main__content--item_date">
               <p>
-                <i class="puce_1"></i><strong class="date">2016 - 2017</strong>
+                <i class="main__content--item_list"></i
+                ><strong class="text-bold">2016 - 2017</strong>
               </p>
-              <p class="liste_ville">Paris</p>
+              <p class="main__content--item_city">Paris</p>
             </aside>
-            <article class="poste-container">
-              <h2 class="sous_titre">design inc.</h2>
-              <p class="poste">Web Developer</p>
+            <article class="main__content--item_article">
+              <h2 class="main__content--item_title">design inc.</h2>
+              <p class="main__content--item_job">Web Developer</p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
@@ -141,16 +143,17 @@
               </p>
             </article>
           </section>
-          <section id="exp_2">
-            <aside class="date_aside">
+          <section class="main__content--item">
+            <aside class="main__content--item_date">
               <p>
-                <i class="puce_2"></i><strong class="date">2014 - 2016</strong>
+                <i class="puce_2"></i
+                ><strong class="text-bold">2014 - 2016</strong>
               </p>
-              <p class="liste_ville">Paris</p>
+              <p class="main__content--item_city">Paris</p>
             </aside>
-            <article class="poste-container">
-              <h2 class="sous_titre">design inc.</h2>
-              <p class="poste">Graphique Designer</p>
+            <article class="main__content--item_article">
+              <h2 class="main__content--item_title">design inc.</h2>
+              <p class="main__content--item_job">Graphique Designer</p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
@@ -158,16 +161,17 @@
               </p>
             </article>
           </section>
-          <section id="exp_3">
-            <aside class="date_aside">
+          <section class="main__content--item">
+            <aside class="main__content--item_date">
               <p>
-                <i class="puce_2"></i><strong class="date">2014 - 2016</strong>
+                <i class="puce_2"></i
+                ><strong class="text-bold">2014 - 2016</strong>
               </p>
-              <p class="liste_ville">Paris</p>
+              <p class="main__content--item_city">Paris</p>
             </aside>
-            <article class="poste-container">
-              <h2 class="sous_titre">design inc.</h2>
-              <p class="poste">Graphique Designer</p>
+            <article class="main__content--item_article">
+              <h2 class="main__content--item_title">design inc.</h2>
+              <p class="main__content--item_job">Graphique Designer</p>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
@@ -176,23 +180,23 @@
             </article>
           </section>
         </section>
-        <section id="recommendations">
-          <h1 class="titre_main">
+        <section class="main__content mx-3-md mx-2-sm mx-1-xs">
+          <h1 class="main__content--title">
             <i class="fa fa-pencil" aria-hidden="true"></i>recommandations
           </h1>
-          <section class="recommandations">
-            <article id="recommandation_1">
-              <h4>maxime kieman</h4>
+          <section class="main__content--recommandations">
+            <article class="main__content--recommandations_item">
+              <h4 class="text-bold text-uppercase">maxime kieman</h4>
               <address>
-                <strong id="poste_1"
+                <strong class="text-bold"
                   >Directeur, Mon agence <br />Téléphone : <br /></strong
                 >Email : name@email.com
               </address>
             </article>
-            <article id="recommandation_2">
-              <h4>maxime kieman</h4>
+            <article class="main__content--recommandations_item">
+              <h4 class="text-bold text-uppercase">maxime kieman</h4>
               <address>
-                <strong id="poste_2"
+                <strong class="text-bold"
                   >Directeur, Mon agence <br />Téléphone : <br /></strong
                 >Email : name@email.com
               </address>
