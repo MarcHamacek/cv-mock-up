@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+@mixin text-variants($colors) {
+  @each $name, $color in $colors {
+    .text-#{$name} {
+      color: $color !important;
+    }
+  }
+}
+
+@mixin background-variants($colors) {
+  @each $name, $color in $colors {
+    .bg-#{$name} {
+      background-color: $color !important;
+    }
+  }
+}

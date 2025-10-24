@@ -1,3 +1,8 @@
+@use 'variables' as *;
+@use 'mixins';
+@use 'utilities';
+@use 'typography';
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -136,8 +141,8 @@ body {
 @font-face {
   font-family: 'robotoregular';
   src: url('fonts/Roboto-Regular-webfont.eot');
-  src: url('fonts/Roboto-Regular-webfont.eot?#iefix')
-      format('embedded-opentype'),
+  src:
+    url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
     url('fonts/Roboto-Regular-webfont.woff2') format('woff2'),
     url('fonts/Roboto-Regular-webfont.woff') format('woff'),
     url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
@@ -147,7 +152,6 @@ body {
 }
 
 .aside {
-  background-color: #feca07;
   width: 35%;
 
   &__header {
@@ -164,8 +168,6 @@ body {
       font-size: 28px;
       text-transform: text-uppercase;
       font-weight: text-bold;
-      color: #feca07;
-      background-color: #404040;
       text-align: center;
       padding-top: 6px;
       padding-bottom: 5px;
@@ -200,16 +202,12 @@ body {
 
 .main {
   width: 65%;
-  background-color: white;
   &__header {
     margin: 110px 45px 55px 60px;
     &--name {
       text-transform: text-uppercase;
       font-size: 60px;
       margin-bottom: 10px;
-    }
-    &--firstname {
-      color: #feca07;
     }
     &--job {
       font-size: 30px;
@@ -218,7 +216,7 @@ body {
       margin-top: 30px;
     }
     &--border_job {
-      border-bottom: 2px solid #feca07;
+      border-bottom: 2px solid $primary;
     }
   }
   &__content {
@@ -227,7 +225,7 @@ body {
       font-size: 28px;
       text-transform: text-uppercase;
       font-weight: text-bold;
-      border-bottom: 2px solid #feca07;
+      border-bottom: 2px solid $primary;
       padding-bottom: 10px;
     }
     &--item {
@@ -242,7 +240,7 @@ body {
       display: inline-block;
       height: 14px;
       width: 14px;
-      background: #feca07;
+      background: $primary;
       border-radius: 50%;
       margin-right: 16px;
       position: relative;
@@ -252,7 +250,7 @@ body {
       display: inline-block;
       height: 6px;
       width: 6px;
-      background: #feca07;
+      background: $primary;
       border-radius: 50%;
       position: absolute;
       top: 2px;
@@ -284,7 +282,6 @@ body {
 }
 
 .fa {
-  color: #feca07;
   margin-right: 30px;
 }
 
@@ -292,7 +289,7 @@ i.puce_2 {
   display: inline-block;
   height: 10px;
   width: 10px;
-  background: #feca07;
+  background: $primary;
   border-radius: 50%;
   margin-right: 20px;
 }

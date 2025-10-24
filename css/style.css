@@ -1,4 +1,28 @@
 @charset "UTF-8";
+.bg-primary {
+  background-color: #feca07 !important;
+}
+
+.bg-secondary {
+  background-color: #404040 !important;
+}
+
+.bg-light {
+  background-color: #f5f5f5 !important;
+}
+
+.text-primary {
+  color: #feca07 !important;
+}
+
+.text-secondary {
+  color: #404040 !important;
+}
+
+.text-light {
+  color: #f5f5f5 !important;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -146,7 +170,6 @@ body {
   font-style: normal;
 }
 .aside {
-  background-color: #feca07;
   width: 35%;
 }
 .aside__header {
@@ -161,8 +184,6 @@ body {
   font-size: 28px;
   text-transform: text-uppercase;
   font-weight: text-bold;
-  color: #feca07;
-  background-color: #404040;
   text-align: center;
   padding-top: 6px;
   padding-bottom: 5px;
@@ -194,7 +215,6 @@ body {
 
 .main {
   width: 65%;
-  background-color: white;
 }
 .main__header {
   margin: 110px 45px 55px 60px;
@@ -203,9 +223,6 @@ body {
   text-transform: text-uppercase;
   font-size: 60px;
   margin-bottom: 10px;
-}
-.main__header--firstname {
-  color: #feca07;
 }
 .main__header--job {
   font-size: 30px;
@@ -278,7 +295,6 @@ body {
 }
 
 .fa {
-  color: #feca07;
   margin-right: 30px;
 }
 
