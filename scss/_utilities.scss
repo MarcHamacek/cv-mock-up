@@ -8,3 +8,7 @@
     'light': $light,
   )
 );
+
+/* Font Utilities */
+@include font-size-utilities($font-sizes);
+@include font-weight-utilities($font-weights);
