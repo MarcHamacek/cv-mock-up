@@ -1,18 +1,482 @@
-/* Error: Undefined mixin.
- *    ,
- * 14 | @include font-weight-utilities($font-weights);
- *    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\_utilities.scss 14:1  @use
- *   scss\main.scss 3:1         root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 14 \2502  @include font-weight-utilities($font-weights);\d\a    \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\_utilities.scss 14:1  @use\a   scss\\main.scss 3:1         root stylesheet";
+@charset "UTF-8";
+.bg-primary {
+  background-color: #feca07 !important;
 }
+
+.bg-secondary {
+  background-color: #404040 !important;
+}
+
+.bg-light {
+  background-color: #f5f5f5 !important;
+}
+
+.text-primary {
+  color: #feca07 !important;
+}
+
+.text-secondary {
+  color: #404040 !important;
+}
+
+.text-light {
+  color: #f5f5f5 !important;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+  font-family: "robotoregular", sans-serif, serif;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+/*Début du code CSS*/
+/*Typography*/
+@font-face {
+  font-family: "robotoregular";
+  src: url("fonts/Roboto-Regular-webfont.eot");
+  src: url("fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Regular-webfont.woff2") format("woff2"), url("fonts/Roboto-Regular-webfont.woff") format("woff"), url("fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.aside {
+  width: 35%;
+}
+.aside__header {
+  text-align: center;
+  margin: 30px 0;
+}
+.aside__header--picture {
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.aside__block--title {
+  font-size: 28px;
+  text-transform: text-uppercase;
+  font-weight: text-bold;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 5px;
+}
+.aside__block--contact {
+  margin: 30px auto 40px 50px;
+}
+.aside__block--article {
+  text-align: justify;
+  margin: 40px 50px auto 50px;
+}
+.aside__block--icons {
+  text-align: center;
+  margin: 30px 50px 50px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  vertical-align: top;
+}
+.aside__block--icon {
+  height: 75px;
+  width: 75px;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 5px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.main {
+  width: 65%;
+}
+.main__header {
+  margin: 110px 45px 55px 60px;
+}
+.main__header--name {
+  text-transform: text-uppercase;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.main__header--job {
+  font-size: 30px;
+  font-weight: text-bold;
+  opacity: 0.8;
+  margin-top: 30px;
+}
+.main__header--border_job {
+  border-bottom: 2px solid #feca07;
+}
+.main__content {
+  margin: 110px 45px 55px 60px;
+}
+.main__content--title {
+  font-size: 28px;
+  text-transform: text-uppercase;
+  font-weight: text-bold;
+  border-bottom: 2px solid #feca07;
+  padding-bottom: 10px;
+}
+.main__content--item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main__content--item_date {
+  width: 550px;
+}
+.main__content--item_list {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background: #feca07;
+  border-radius: 50%;
+  margin-right: 16px;
+  position: relative;
+}
+.main__content--item_list::after {
+  content: "";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  background: #feca07;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border: 2px solid white;
+}
+.main__content--item_city {
+  font-weight: 600;
+  margin-left: 28px;
+}
+.main__content--item_title {
+  text-transform: text-uppercase;
+  font-weight: text-bold;
+  font-size: 16px;
+}
+.main__content--item_job {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main__content--recommandations {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.main__content--recommandation_item {
+  margin-left: 120px;
+}
+
+.fa {
+  margin-right: 30px;
+}
+
+i.puce_2 {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: #feca07;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.mx-3-md {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.mx-2-sm {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mx-1-xs {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media all and (max-width: 1200px) {
+  body {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .aside {
+    width: 100%;
+  }
+  .aside__block--contact {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .main {
+    width: 100%;
+  }
+}
+@media all and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .aside {
+    width: 100%;
+  }
+  .aside__block--contact {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .aside__block--article {
+    text-align: justify;
+    margin: 40px 50px auto 50px;
+  }
+  .main {
+    width: 100%;
+  }
+  .main__header {
+    margin-top: 80px;
+  }
+  .main__header--name {
+    line-height: 100%;
+    margin-left: 50px;
+  }
+  .main__header--job {
+    line-height: 150%;
+    margin-left: 50px;
+  }
+  .main__content {
+    margin-top: 80px;
+  }
+  .main__content--title {
+    text-align: center;
+  }
+  .main__content--item {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .main__content--item_date {
+    width: auto;
+  }
+  .main__content--item_city {
+    margin-left: 0;
+  }
+  .main__content--item_title {
+    margin-top: 20px;
+  }
+  .main__content--recommandations {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main__content--recommandation_item {
+    margin-left: 0;
+    margin-top: 28px;
+  }
+}
+@media all and (max-width: 576px) {
+  body {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .fa {
+    margin-right: 10px;
+  }
+  .aside {
+    width: 100%;
+  }
+  .aside__block--contact {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .aside__block--icon {
+    height: 60px;
+    width: 60px;
+  }
+  .main {
+    width: 100%;
+  }
+  .main__header {
+    margin-top: 80px;
+  }
+  .main__header--name {
+    line-height: 100%;
+    margin-left: 10px;
+  }
+  .main__header--job {
+    line-height: 150%;
+    margin-left: 10px;
+  }
+  .main__content {
+    margin-top: 80px;
+  }
+  .main__content--title {
+    font-size: 22px;
+  }
+  .main__content--item {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .main__content--item_date {
+    width: auto;
+  }
+  .main__content--item_city {
+    margin-left: 0;
+  }
+  .main__content--item_title {
+    margin-top: 12px;
+  }
+  .main__content--recommandations_item {
+    margin-left: 0;
+    margin-top: 28px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

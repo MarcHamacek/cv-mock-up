@@ -86,6 +86,8 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
+  font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -129,14 +131,31 @@ table {
 body {
   width: 1200px;
   margin: auto;
+  font-family: 'robotoregular', sans-serif, serif;
+  font-size: 16px;
   line-height: 150%;
 }
 
 /*Début du code CSS*/
+/*Typography*/
+@font-face {
+  font-family: 'robotoregular';
+  src: url('fonts/Roboto-Regular-webfont.eot');
+  src:
+    url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+    url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+    url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+    url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .aside {
   width: 35%;
 
   &__header {
+    text-align: center;
     margin: 30px 0;
     &--picture {
       border: 5px solid rgba(0, 0, 0, 0.1);
@@ -146,6 +165,10 @@ body {
 
   &__block {
     &--title {
+      font-size: 28px;
+      text-transform: text-uppercase;
+      font-weight: text-bold;
+      text-align: center;
       padding-top: 6px;
       padding-bottom: 5px;
     }
@@ -153,9 +176,11 @@ body {
       margin: 30px auto 40px 50px;
     }
     &--article {
+      text-align: justify;
       margin: 40px 50px auto 50px;
     }
     &--icons {
+      text-align: center;
       margin: 30px 50px 50px 50px;
       display: flex;
       flex-direction: row;
@@ -180,9 +205,13 @@ body {
   &__header {
     margin: 110px 45px 55px 60px;
     &--name {
+      text-transform: text-uppercase;
+      font-size: 60px;
       margin-bottom: 10px;
     }
     &--job {
+      font-size: 30px;
+      font-weight: text-bold;
       opacity: 0.8;
       margin-top: 30px;
     }
@@ -193,6 +222,9 @@ body {
   &__content {
     margin: 110px 45px 55px 60px;
     &--title {
+      font-size: 28px;
+      text-transform: text-uppercase;
+      font-weight: text-bold;
       border-bottom: 2px solid $primary;
       padding-bottom: 10px;
     }
@@ -226,7 +258,13 @@ body {
       border: 2px solid white;
     }
     &--item_city {
+      font-weight: 600;
       margin-left: 28px;
+    }
+    &--item_title {
+      text-transform: text-uppercase;
+      font-weight: text-bold;
+      font-size: 16px;
     }
     &--item_job {
       margin-top: 10px;
@@ -254,6 +292,14 @@ i.puce_2 {
   background: $primary;
   border-radius: 50%;
   margin-right: 20px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .mt-3 {
@@ -319,6 +365,7 @@ i.puce_2 {
         margin-right: 25px;
       }
       &--article {
+        text-align: justify;
         margin: 40px 50px auto 50px;
       }
     }
@@ -339,8 +386,12 @@ i.puce_2 {
     }
     &__content {
       margin-top: 80px;
+      &--title {
+        text-align: center;
+      }
       &--item {
         flex-direction: column;
+        text-align: center;
         margin-bottom: 40px;
       }
       &--item_date {
@@ -354,6 +405,7 @@ i.puce_2 {
       }
       &--recommandations {
         flex-direction: column;
+        text-align: center;
       }
       &--recommandation_item {
         margin-left: 0;
@@ -404,8 +456,12 @@ i.puce_2 {
     }
     &__content {
       margin-top: 80px;
+      &--title {
+        font-size: 22px;
+      }
       &--item {
         flex-direction: column;
+        text-align: center;
         margin-bottom: 40px;
       }
       &--item_date {

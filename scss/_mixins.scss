@@ -15,19 +15,3 @@
     }
   }
 }
-
-@mixin font-size-utilities($sizes) {
-  @each $name, $size in $sizes {
-    .fs-#{$name} {
-      font-size: $size !important;
-    }
-  }
-}
-
-@mixin font-weight-utlities($weights) {
-  @each $name, $weight in $weights {
-    .fw-#{$name} {
-      font-weight: $weight !important;
-    }
-  }
-}
