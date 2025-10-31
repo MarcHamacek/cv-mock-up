@@ -11,11 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
-  <body>
+  <body class="fw-md">
     <div class="container">
       <!--Partie gauche du CV-->
       <aside class="aside bg-primary">
-        <header class="aside__header">
+        <header class="aside__header text-center">
           <img
             class="aside__header--picture"
             src="images/profile-picture.png"
@@ -23,7 +23,11 @@
           />
         </header>
         <section class="aside__block">
-          <h3 class="aside__block--title text-primary bg-secondary">contact</h3>
+          <h3
+            class="aside__block--title text-primary bg-secondary text-uppercase fs-xl fw-bold text-center"
+          >
+            contact
+          </h3>
           <address class="aside__block--contact">
             <p>Adresse <br />Paris, France</p>
             <br />
@@ -37,11 +41,13 @@
           </address>
         </section>
         <section class="aside__block">
-          <h3 class="aside__block--title text-primary bg-secondary">
+          <h3
+            class="aside__block--title text-primary bg-secondary text-uppercase fs-xl fw-bold text-center"
+          >
             à propos de moi
           </h3>
           <article class="aside__block--article mx-3-md mx-2-sm mx-1-xs">
-            <p>
+            <p class="text-justify">
               Lorem ipsum dolor sit amet, consecteturadipiscing elit. Fusce
               eleifend, diam vitae faucibus varius, neque lectus viverra justo,
               eget pharetra felis massa sit amet lacus. Nam pulvinar est vel
@@ -54,10 +60,12 @@
           </article>
         </section>
         <section class="aside__block">
-          <h3 class="aside__block--title text-primary bg-secondary mt-3">
+          <h3
+            class="aside__block--title text-primary bg-secondary text-uppercase fs-xl mt-3 fw-bold text-center"
+          >
             loisirs
           </h3>
-          <p class="aside__block--icons mx-3-md mx-2-sm mx-1-xs">
+          <p class="aside__block--icons text-center mx-2-sm mx-1-xs">
             <img
               class="aside__block--icon"
               src="images/swimming.svg"
@@ -76,30 +84,35 @@
       </aside>
       <!--Partie principale du CV-->
       <main class="main bg-light">
-        <header class="main__header mx-3-md mx-2-sm mx-1-xs">
-          <p class="main__header--name">
+        <header class="main__header text-uppercase mx-3-md mx-2-sm mx-1-xs">
+          <p class="main__header--name fs-xxl">
             <strong class="main__header--firstname text-primary">john</strong>
             doe
           </p>
-          <p class="main__header--job">
-            <em class="main__header--border_job">Dével</em>oppeur web freelance
+          <p class="main__header--job fs-xl fw-bold">
+            <span class="main__header--border_job">Dével</span>oppeur web
+            freelance
           </p>
         </header>
         <section class="main__content mx-3-md mx-2-sm mx-1-xs">
-          <h1 class="main__content--title">
+          <h1 class="main__content--title fs-lg text-uppercase fw-bold">
             <i class="fa fa-graduation-cap text-primary" aria-hidden="true"></i
             >formation
           </h1>
           <section class="main__content--item">
             <aside class="main__content--item_date">
               <i class="main__content--item_list"></i
-              ><strong class="text-bold">2016 - 2017</strong>
-              <p class="main__content--item_city">Paris</p>
+              ><strong class="fw-bold">2016 - 2017</strong>
+              <p class="main__content--item_city fw-semi-bold">Paris</p>
             </aside>
             <article class="main__content--item_article">
-              <h2 class="main__content--item_title">openclassrooms</h2>
+              <h2
+                class="main__content--item_title fs-md text-uppercase fw-bold"
+              >
+                openclassrooms
+              </h2>
               <p class="main__content--item_job">Junior Web Developer</p>
-              <p>
+              <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
                 justo, eget pharetra felis massa sit amet lacus.
@@ -110,14 +123,18 @@
             <aside class="main__content--item_date">
               <p>
                 <i class="puce_2"></i
-                ><strong class="text-bold">2014 - 2016</strong>
+                ><strong class="fw-bold">2014 - 2016</strong>
               </p>
-              <p class="main__content--item_city">Orléans</p>
+              <p class="main__content--item_city fw-semi-bold">Orléans</p>
             </aside>
             <article class="main__content--item_article">
-              <h2 class="main__content--item_title">university of lorem</h2>
+              <h2
+                class="main__content--item_title fs-md text-uppercase fw-bold"
+              >
+                university of lorem
+              </h2>
               <p class="main__content--item_job">Graphique Designer</p>
-              <p>
+              <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
                 justo, eget pharetra felis massa sit amet lacus.
@@ -126,7 +143,7 @@
           </section>
         </section>
         <section class="main__content mx-3-md mx-2-sm mx-1-xs">
-          <h1 class="main__content--title">
+          <h1 class="main__content--title fs-lg text-uppercase fw-bold">
             <i class="fa fa-briefcase text-primary" aria-hidden="true"></i
             >expérience professionelle
           </h1>
@@ -134,14 +151,18 @@
             <aside class="main__content--item_date">
               <p>
                 <i class="main__content--item_list"></i
-                ><strong class="text-bold">2016 - 2017</strong>
+                ><strong class="fw-bold">2016 - 2017</strong>
               </p>
-              <p class="main__content--item_city">Paris</p>
+              <p class="main__content--item_city fw-semi-bold">Paris</p>
             </aside>
             <article class="main__content--item_article">
-              <h2 class="main__content--item_title">design inc.</h2>
+              <h2
+                class="main__content--item_title fs-md text-uppercase fw-bold"
+              >
+                design inc.
+              </h2>
               <p class="main__content--item_job">Web Developer</p>
-              <p>
+              <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
                 justo, eget pharetra felis massa sit amet lacus.
@@ -152,14 +173,18 @@
             <aside class="main__content--item_date">
               <p>
                 <i class="puce_2"></i
-                ><strong class="text-bold">2014 - 2016</strong>
+                ><strong class="fw-bold">2014 - 2016</strong>
               </p>
-              <p class="main__content--item_city">Paris</p>
+              <p class="main__content--item_city fw-semi-bold">Paris</p>
             </aside>
             <article class="main__content--item_article">
-              <h2 class="main__content--item_title">design inc.</h2>
+              <h2
+                class="main__content--item_title fs-md text-uppercase fw-bold"
+              >
+                design inc.
+              </h2>
               <p class="main__content--item_job">Graphique Designer</p>
-              <p>
+              <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
                 justo, eget pharetra felis massa sit amet lacus.
@@ -170,14 +195,18 @@
             <aside class="main__content--item_date">
               <p>
                 <i class="puce_2"></i
-                ><strong class="text-bold">2014 - 2016</strong>
+                ><strong class="fw-bold">2014 - 2016</strong>
               </p>
-              <p class="main__content--item_city">Paris</p>
+              <p class="main__content--item_city fw-semi-bold">Paris</p>
             </aside>
             <article class="main__content--item_article">
-              <h2 class="main__content--item_title">design inc.</h2>
+              <h2
+                class="main__content--item_title fs-md text-uppercase fw-bold"
+              >
+                design inc.
+              </h2>
               <p class="main__content--item_job">Graphique Designer</p>
-              <p>
+              <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
                 justo, eget pharetra felis massa sit amet lacus.
@@ -186,23 +215,23 @@
           </section>
         </section>
         <section class="main__content mx-3-md mx-2-sm mx-1-xs">
-          <h1 class="main__content--title">
+          <h1 class="main__content--title fs-lg text-uppercase fw-bold">
             <i class="fa fa-pencil text-primary" aria-hidden="true"></i
             >recommandations
           </h1>
           <section class="main__content--recommandations">
             <article class="main__content--recommandations_item">
-              <h4 class="text-bold text-uppercase">maxime kieman</h4>
+              <h4 class="fw-bold text-uppercase">maxime kieman</h4>
               <address>
-                <strong class="text-bold"
+                <strong class="fw-bold"
                   >Directeur, Mon agence <br />Téléphone : <br /></strong
                 >Email : name@email.com
               </address>
             </article>
             <article class="main__content--recommandations_item">
-              <h4 class="text-bold text-uppercase">maxime kieman</h4>
+              <h4 class="fw-bold text-uppercase">maxime kieman</h4>
               <address>
-                <strong class="text-bold"
+                <strong class="fw-bold"
                   >Directeur, Mon agence <br />Téléphone : <br /></strong
                 >Email : name@email.com
               </address>

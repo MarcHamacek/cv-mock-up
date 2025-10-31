@@ -8,3 +8,9 @@
     'light': $light,
   )
 );
+
+// -----------------------------
+// ✍️ Typography
+// -----------------------------
+@include font-size-utilities($font-sizes);
+@include font-weight-utilities($font-weights);

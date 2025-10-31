@@ -8,3 +8,41 @@
     'light': $light,
   )
 );
+
+body {
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+}
+
+/* Text Transform Utilities */
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+/* Font Weight and Italics Utilities */
+.fst-italic {
+  font-style: italic !important;
+}
+.fst-normal {
+  font-style: normal !important;
+}
+
+/* Text Alignment Utilities */
+.text-center {
+  text-align: center !important;
+}
+.text-start {
+  text-align: left !important;
+}
+.text-end {
+  text-align: right !important;
+}
+.text-justify {
+  text-align: justify !important;
+}

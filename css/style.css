@@ -11,6 +11,66 @@
   background-color: #f5f5f5 !important;
 }
 
+.fs-xs {
+  font-size: 0.75rem !important;
+}
+
+.fs-sm {
+  font-size: 0.875rem !important;
+}
+
+.fs-md {
+  font-size: 1rem !important;
+}
+
+.fs-lg {
+  font-size: 1.125rem !important;
+}
+
+.fs-xl {
+  font-size: 1.5rem !important;
+}
+
+.fs-xxl {
+  font-size: 4rem !important;
+}
+
+.fw-thin {
+  font-weight: 100 !important;
+}
+
+.fw-extra-light {
+  font-weight: 200 !important;
+}
+
+.fw-light {
+  font-weight: 300 !important;
+}
+
+.fw-normal {
+  font-weight: 400 !important;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.fw-semi-bold {
+  font-weight: 600 !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.fw-bolder {
+  font-weight: 800 !important;
+}
+
+.fw-extra-bold {
+  font-weight: 900 !important;
+}
+
 .text-primary {
   color: #feca07 !important;
 }
@@ -21,6 +81,50 @@
 
 .text-light {
   color: #f5f5f5 !important;
+}
+
+body {
+  font-family: "Roboto Regular", "Roboto", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Text Transform Utilities */
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+/* Font Weight and Italics Utilities */
+.fst-italic {
+  font-style: italic !important;
+}
+
+.fst-normal {
+  font-style: normal !important;
+}
+
+/* Text Alignment Utilities */
+.text-center {
+  text-align: center !important;
+}
+
+.text-start {
+  text-align: left !important;
+}
+
+.text-end {
+  text-align: right !important;
+}
+
+.text-justify {
+  text-align: justify !important;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -105,8 +209,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -123,10 +225,6 @@ menu,
 nav,
 section {
   display: block;
-}
-
-body {
-  line-height: 1;
 }
 
 ol,
@@ -152,28 +250,16 @@ table {
   border-spacing: 0;
 }
 
+/*Début du code CSS*/
 body {
   width: 1200px;
   margin: auto;
-  font-family: "robotoregular", sans-serif, serif;
-  font-size: 16px;
-  line-height: 150%;
 }
 
-/*Début du code CSS*/
-/*Typography*/
-@font-face {
-  font-family: "robotoregular";
-  src: url("fonts/Roboto-Regular-webfont.eot");
-  src: url("fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Regular-webfont.woff2") format("woff2"), url("fonts/Roboto-Regular-webfont.woff") format("woff"), url("fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 .aside {
   width: 35%;
 }
 .aside__header {
-  text-align: center;
   margin: 30px 0;
 }
 .aside__header--picture {
@@ -181,10 +267,6 @@ body {
   border-radius: 50%;
 }
 .aside__block--title {
-  font-size: 28px;
-  text-transform: text-uppercase;
-  font-weight: text-bold;
-  text-align: center;
   padding-top: 6px;
   padding-bottom: 5px;
 }
@@ -192,11 +274,9 @@ body {
   margin: 30px auto 40px 50px;
 }
 .aside__block--article {
-  text-align: justify;
   margin: 40px 50px auto 50px;
 }
 .aside__block--icons {
-  text-align: center;
   margin: 30px 50px 50px 50px;
   display: flex;
   flex-direction: row;
@@ -220,13 +300,9 @@ body {
   margin: 110px 45px 55px 60px;
 }
 .main__header--name {
-  text-transform: text-uppercase;
-  font-size: 60px;
   margin-bottom: 10px;
 }
 .main__header--job {
-  font-size: 30px;
-  font-weight: text-bold;
   opacity: 0.8;
   margin-top: 30px;
 }
@@ -237,9 +313,6 @@ body {
   margin: 110px 45px 55px 60px;
 }
 .main__content--title {
-  font-size: 28px;
-  text-transform: text-uppercase;
-  font-weight: text-bold;
   border-bottom: 2px solid #feca07;
   padding-bottom: 10px;
 }
@@ -273,13 +346,7 @@ body {
   border: 2px solid white;
 }
 .main__content--item_city {
-  font-weight: 600;
   margin-left: 28px;
-}
-.main__content--item_title {
-  text-transform: text-uppercase;
-  font-weight: text-bold;
-  font-size: 16px;
 }
 .main__content--item_job {
   margin-top: 10px;
@@ -305,14 +372,6 @@ i.puce_2 {
   background: #feca07;
   border-radius: 50%;
   margin-right: 20px;
-}
-
-.text-bold {
-  font-weight: bold;
-}
-
-.text-uppercase {
-  text-transform: uppercase;
 }
 
 .mt-3 {
@@ -372,7 +431,6 @@ i.puce_2 {
     margin-right: 25px;
   }
   .aside__block--article {
-    text-align: justify;
     margin: 40px 50px auto 50px;
   }
   .main {
@@ -382,22 +440,16 @@ i.puce_2 {
     margin-top: 80px;
   }
   .main__header--name {
-    line-height: 100%;
     margin-left: 50px;
   }
   .main__header--job {
-    line-height: 150%;
     margin-left: 50px;
   }
   .main__content {
     margin-top: 80px;
   }
-  .main__content--title {
-    text-align: center;
-  }
   .main__content--item {
     flex-direction: column;
-    text-align: center;
     margin-bottom: 40px;
   }
   .main__content--item_date {
@@ -411,7 +463,6 @@ i.puce_2 {
   }
   .main__content--recommandations {
     flex-direction: column;
-    text-align: center;
   }
   .main__content--recommandation_item {
     margin-left: 0;
@@ -446,22 +497,16 @@ i.puce_2 {
     margin-top: 80px;
   }
   .main__header--name {
-    line-height: 100%;
     margin-left: 10px;
   }
   .main__header--job {
-    line-height: 150%;
     margin-left: 10px;
   }
   .main__content {
     margin-top: 80px;
   }
-  .main__content--title {
-    font-size: 22px;
-  }
   .main__content--item {
     flex-direction: column;
-    text-align: center;
     margin-bottom: 40px;
   }
   .main__content--item_date {
