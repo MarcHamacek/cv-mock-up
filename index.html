@@ -11,11 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
-  <body class="fw-md">
+  <body class="m-auto fw-md">
     <div class="container">
       <!--Partie gauche du CV-->
       <aside class="aside bg-primary">
-        <header class="aside__header text-center">
+        <header class="aside__header text-center my-4">
           <img
             class="aside__header--picture"
             src="images/profile-picture.png"
@@ -24,11 +24,11 @@
         </header>
         <section class="aside__block">
           <h3
-            class="aside__block--title text-primary bg-secondary text-uppercase fs-xl fw-bold text-center"
+            class="aside__block--title py-2 text-primary bg-secondary text-uppercase fs-xl fw-bold text-center"
           >
             contact
           </h3>
-          <address class="aside__block--contact">
+          <address class="aside__block--contact m-4">
             <p>Adresse <br />Paris, France</p>
             <br />
             <p>Téléphone <br />06 00 00 00 00</p>
@@ -42,11 +42,11 @@
         </section>
         <section class="aside__block">
           <h3
-            class="aside__block--title text-primary bg-secondary text-uppercase fs-xl fw-bold text-center"
+            class="aside__block--title py-2 text-primary bg-secondary text-uppercase fs-xl fw-bold text-center"
           >
             à propos de moi
           </h3>
-          <article class="aside__block--article mx-3-md mx-2-sm mx-1-xs">
+          <article class="aside__block--article m-3 mx-3-md mx-2-sm mx-1-xs">
             <p class="text-justify">
               Lorem ipsum dolor sit amet, consecteturadipiscing elit. Fusce
               eleifend, diam vitae faucibus varius, neque lectus viverra justo,
@@ -61,21 +61,21 @@
         </section>
         <section class="aside__block">
           <h3
-            class="aside__block--title text-primary bg-secondary text-uppercase fs-xl mt-3 fw-bold text-center"
+            class="aside__block--title py-2 text-primary bg-secondary text-uppercase fs-xl mt-3 fw-bold text-center"
           >
             loisirs
           </h3>
-          <p class="aside__block--icons text-center mx-2-sm mx-1-xs">
+          <p class="aside__block--icons my-3 text-center mx-2-sm mx-1-xs">
             <img
-              class="aside__block--icon"
+              class="aside__block--icon p-1"
               src="images/swimming.svg"
               alt="swimming"
             /><img
-              class="aside__block--icon"
+              class="aside__block--icon p-1"
               src="images/biking.svg"
               alt="biking"
             /><img
-              class="aside__block--icon"
+              class="aside__block--icon p-1"
               src="images/table-tennis.svg"
               alt="table-tennis"
             />
@@ -84,7 +84,9 @@
       </aside>
       <!--Partie principale du CV-->
       <main class="main bg-light">
-        <header class="main__header text-uppercase mx-3-md mx-2-sm mx-1-xs">
+        <header
+          class="main__header my-4 text-uppercase mx-3-md mx-2-sm mx-1-xs"
+        >
           <p class="main__header--name fs-xxl">
             <strong class="main__header--firstname text-primary">john</strong>
             doe
@@ -95,15 +97,20 @@
           </p>
         </header>
         <section class="main__content mx-3-md mx-2-sm mx-1-xs">
-          <h1 class="main__content--title fs-lg text-uppercase fw-bold">
-            <i class="fa fa-graduation-cap text-primary" aria-hidden="true"></i
+          <h1
+            class="main__content--title mb-4 pb-2 fs-lg text-uppercase fw-bold"
+          >
+            <i
+              class="fa fa-graduation-cap mr-4 text-primary"
+              aria-hidden="true"
+            ></i
             >formation
           </h1>
-          <section class="main__content--item">
+          <section class="main__content--item py-3">
             <aside class="main__content--item_date">
-              <i class="main__content--item_list"></i
+              <i class="main__content--item_list mr-3"></i
               ><strong class="fw-bold">2016 - 2017</strong>
-              <p class="main__content--item_city fw-semi-bold">Paris</p>
+              <p class="main__content--item_city ml-4 fw-semi-bold">Paris</p>
             </aside>
             <article class="main__content--item_article">
               <h2
@@ -111,7 +118,7 @@
               >
                 openclassrooms
               </h2>
-              <p class="main__content--item_job">Junior Web Developer</p>
+              <p class="main__content--item_job my-2">Junior Web Developer</p>
               <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
@@ -119,13 +126,13 @@
               </p>
             </article>
           </section>
-          <section class="main__content--item">
+          <section class="main__content--item py-3">
             <aside class="main__content--item_date">
               <p>
-                <i class="puce_2"></i
+                <i class="puce_2 mr-3"></i
                 ><strong class="fw-bold">2014 - 2016</strong>
               </p>
-              <p class="main__content--item_city fw-semi-bold">Orléans</p>
+              <p class="main__content--item_city ml-4 fw-semi-bold">Orléans</p>
             </aside>
             <article class="main__content--item_article">
               <h2
@@ -133,7 +140,7 @@
               >
                 university of lorem
               </h2>
-              <p class="main__content--item_job">Graphique Designer</p>
+              <p class="main__content--item_job my-2">Graphique Designer</p>
               <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
@@ -143,17 +150,19 @@
           </section>
         </section>
         <section class="main__content mx-3-md mx-2-sm mx-1-xs">
-          <h1 class="main__content--title fs-lg text-uppercase fw-bold">
-            <i class="fa fa-briefcase text-primary" aria-hidden="true"></i
+          <h1
+            class="main__content--title mb-4 pb-2 fs-lg text-uppercase fw-bold"
+          >
+            <i class="fa fa-briefcase mr-4 text-primary" aria-hidden="true"></i
             >expérience professionelle
           </h1>
-          <section class="main__content--item">
+          <section class="main__content--item py-3">
             <aside class="main__content--item_date">
               <p>
-                <i class="main__content--item_list"></i
+                <i class="main__content--item_list mr-3"></i
                 ><strong class="fw-bold">2016 - 2017</strong>
               </p>
-              <p class="main__content--item_city fw-semi-bold">Paris</p>
+              <p class="main__content--item_city ml-4 fw-semi-bold">Paris</p>
             </aside>
             <article class="main__content--item_article">
               <h2
@@ -161,7 +170,7 @@
               >
                 design inc.
               </h2>
-              <p class="main__content--item_job">Web Developer</p>
+              <p class="main__content--item_job my-2">Web Developer</p>
               <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
@@ -169,13 +178,13 @@
               </p>
             </article>
           </section>
-          <section class="main__content--item">
+          <section class="main__content--item py-3">
             <aside class="main__content--item_date">
               <p>
-                <i class="puce_2"></i
+                <i class="puce_2 mr-3"></i
                 ><strong class="fw-bold">2014 - 2016</strong>
               </p>
-              <p class="main__content--item_city fw-semi-bold">Paris</p>
+              <p class="main__content--item_city ml-4 fw-semi-bold">Paris</p>
             </aside>
             <article class="main__content--item_article">
               <h2
@@ -183,7 +192,7 @@
               >
                 design inc.
               </h2>
-              <p class="main__content--item_job">Graphique Designer</p>
+              <p class="main__content--item_job my-2">Graphique Designer</p>
               <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
@@ -191,13 +200,13 @@
               </p>
             </article>
           </section>
-          <section class="main__content--item">
+          <section class="main__content--item py-3">
             <aside class="main__content--item_date">
               <p>
-                <i class="puce_2"></i
+                <i class="puce_2 mr-3"></i
                 ><strong class="fw-bold">2014 - 2016</strong>
               </p>
-              <p class="main__content--item_city fw-semi-bold">Paris</p>
+              <p class="main__content--item_city ml-4 fw-semi-bold">Paris</p>
             </aside>
             <article class="main__content--item_article">
               <h2
@@ -205,7 +214,7 @@
               >
                 design inc.
               </h2>
-              <p class="main__content--item_job">Graphique Designer</p>
+              <p class="main__content--item_job my-2">Graphique Designer</p>
               <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
@@ -215,12 +224,14 @@
           </section>
         </section>
         <section class="main__content mx-3-md mx-2-sm mx-1-xs">
-          <h1 class="main__content--title fs-lg text-uppercase fw-bold">
-            <i class="fa fa-pencil text-primary" aria-hidden="true"></i
+          <h1
+            class="main__content--title mb-4 pb-2 fs-lg text-uppercase fw-bold"
+          >
+            <i class="fa fa-pencil mr-4 text-primary" aria-hidden="true"></i
             >recommandations
           </h1>
-          <section class="main__content--recommandations">
-            <article class="main__content--recommandations_item">
+          <section class="main__content--recommandations my-4">
+            <article class="main__content--recommandations_item ml-5">
               <h4 class="fw-bold text-uppercase">maxime kieman</h4>
               <address>
                 <strong class="fw-bold"
@@ -228,7 +239,7 @@
                 >Email : name@email.com
               </address>
             </article>
-            <article class="main__content--recommandations_item">
+            <article class="main__content--recommandations_item ml-5">
               <h4 class="fw-bold text-uppercase">maxime kieman</h4>
               <address>
                 <strong class="fw-bold"

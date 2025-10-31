@@ -14,3 +14,9 @@
 // -----------------------------
 @include font-size-utilities($font-sizes);
 @include font-weight-utilities($font-weights);
+
+// -----------------------------
+// 📏 Spacing
+// -----------------------------
+@include margin-utilities($spacers);
+@include padding-utilities($spacers);

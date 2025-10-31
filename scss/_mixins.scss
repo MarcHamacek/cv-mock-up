@@ -34,3 +34,62 @@
     }
   }
 }
+
+// -----------------------------
+// 📏 Spacing
+// -----------------------------
+@mixin margin-utilities($spacers) {
+  @each $key, $value in $spacers {
+    .m-#{$key} {
+      margin: $value !important;
+    }
+    .mt-#{$key} {
+      margin-top: $value !important;
+    }
+    .mb-#{$key} {
+      margin-bottom: $value !important;
+    }
+    .ml-#{$key} {
+      margin-left: $value !important;
+    }
+    .mr-#{$key} {
+      margin-right: $value !important;
+    }
+    .mx-#{$key} {
+      margin-left: $value !important;
+      margin-right: $value !important;
+    }
+    .my-#{$key} {
+      margin-top: $value !important;
+      margin-bottom: $value !important;
+    }
+  }
+}
+
+@mixin padding-utilities($spacers) {
+  @each $key, $value in $spacers {
+    .p-#{$key} {
+      padding: $value !important;
+    }
+    .pt-#{$key} {
+      padding-top: $value !important;
+    }
+    .pb-#{$key} {
+      padding-bottom: $value !important;
+    }
+    .pl-#{$key} {
+      padding-left: $value !important;
+    }
+    .pr-#{$key} {
+      padding-right: $value !important;
+    }
+    .px-#{$key} {
+      padding-left: $value !important;
+      padding-right: $value !important;
+    }
+    .py-#{$key} {
+      padding-top: $value !important;
+      padding-bottom: $value !important;
+    }
+  }
+}
