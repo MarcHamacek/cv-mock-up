@@ -48,3 +48,15 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 3,
 );
+
+// -----------------------------
+// 🧭 Breakpoints
+// -----------------------------
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
