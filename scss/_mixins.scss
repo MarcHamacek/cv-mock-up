@@ -1,17 +1,32 @@
 @use 'variables' as *;
+@use 'sass:map' as map;
 
 @mixin text-variants($colors) {
   @each $name, $color in $colors {
     .text-#{$name} {
       color: $color !important;
     }
+    @each $breakpoint, $value in $breakpoints {
+      @include media-breakpoint-up($breakpoint) {
+        .text-#{$name}-#{$breakpoint} {
+          color: $color !important;
+        }
+      }
+    }
   }
 }
 
-@mixin background-variants($colors) {
+@mixin background-variants($colors, $breakpoints: $grid-breakpoints) {
   @each $name, $color in $colors {
     .bg-#{$name} {
       background-color: $color !important;
+    }
+    @each $breakpoint, $value in $breakpoints {
+      @include media-breakpoint-up($breakpoint) {
+        .bg-#{$name}-#{$breakpoint} {
+          background-color: $color !important;
+        }
+      }
     }
   }
 }
@@ -24,6 +39,13 @@
     .#{$name} {
       font-size: $size !important;
     }
+    @each $breakpoint, $value in $breakpoints {
+      @include media-breakpoint-up($breakpoint) {
+        .#{$name}-#{$breakpoint} {
+          font-size: $size !important;
+        }
+      }
+    }
   }
 }
 
@@ -32,13 +54,20 @@
     .fw-#{$name} {
       font-weight: $weight !important;
     }
+    @each $breakpoint, $value in $breakpoints {
+      @include media-breakpoint-up($breakpoint) {
+        .fw-#{$name}-#{$breakpoint} {
+          font-weight: $weight !important;
+        }
+      }
+    }
   }
 }
 
 // -----------------------------
 // 📏 Spacing
 // -----------------------------
-@mixin margin-utilities($spacers) {
+@mixin margin-utilities($spacers, $breakpoints: $grid-breakpoints) {
   @each $key, $value in $spacers {
     .m-#{$key} {
       margin: $value !important;
@@ -62,6 +91,33 @@
     .my-#{$key} {
       margin-top: $value !important;
       margin-bottom: $value !important;
+    }
+    @each $breakpoint, $value in $breakpoints {
+      @include media-breakpoint-up($breakpoint) {
+        .m-#{$key}-#{$breakpoint} {
+          margin: $value !important;
+        }
+        .mt-#{$key}-#{$breakpoint} {
+          margin-top: $value !important;
+        }
+        .mb-#{$key}-#{$breakpoint} {
+          margin-bottom: $value !important;
+        }
+        .ml-#{$key}-#{$breakpoint} {
+          margin-left: $value !important;
+        }
+        .mr-#{$key}-#{$breakpoint} {
+          margin-right: $value !important;
+        }
+        .mx-#{$key}-#{$breakpoint} {
+          margin-left: $value !important;
+          margin-right: $value !important;
+        }
+        .my-#{$key}-#{$breakpoint} {
+          margin-top: $value !important;
+          margin-bottom: $value !important;
+        }
+      }
     }
   }
 }
@@ -90,6 +146,49 @@
     .py-#{$key} {
       padding-top: $value !important;
       padding-bottom: $value !important;
+    }
+    @each $breakpoint, $value in $breakpoints {
+      @include media-breakpoint-up($breakpoint) {
+        .p-#{$key}-#{$breakpoint} {
+          padding: $value !important;
+        }
+        .pt-#{$key}-#{$breakpoint} {
+          padding-top: $value !important;
+        }
+        .pb-#{$key}-#{$breakpoint} {
+          padding-bottom: $value !important;
+        }
+        .pl-#{$key}-#{$breakpoint} {
+          padding-left: $value !important;
+        }
+        .pr-#{$key}-#{$breakpoint} {
+          padding-right: $value !important;
+        }
+        .px-#{$key}-#{$breakpoint} {
+          padding-left: $value !important;
+          padding-right: $value !important;
+        }
+        .py-#{$key}-#{$breakpoint} {
+          padding-top: $value !important;
+          padding-bottom: $value !important;
+        }
+      }
+    }
+  }
+}
+
+// -----------------------------
+// 🧭 Breakpoints
+// -----------------------------
+@mixin media-breakpoint-up($breakpoint) {
+  $value: map.get($grid-breakpoints, $breakpoint);
+  @if $value == null {
+    @warn "⚠️ No value for this breakpoint #{$breakpoint}.";
+  } @else if $value == 0 {
+    @content;
+  } @else {
+    @media (min-width: $value) {
+      @content;
     }
   }
 }
