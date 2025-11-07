@@ -35,6 +35,50 @@ $font-weights: (
 $line-height-base: 1.5;
 
 // -----------------------------
+// 🔲 Borders
+// -----------------------------
+$border-sides: (
+  top: top,
+  end: right,
+  bottom: bottom,
+  start: left,
+  all: all,
+);
+
+$border-widths: (
+  0: 0,
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+);
+
+$border-styles: (
+  solid: solid,
+  dashed: dashed,
+  dotted: dotted,
+  none: none,
+);
+
+$border-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  light: $light,
+  dark: black,
+  transparent: #0000001a,
+);
+
+$border-radius: (
+  none: 0,
+  sm: 0.2rem,
+  md: 0.25rem,
+  lg: 0.3rem,
+  pill: 50rem,
+  circle: 50%,
+);
+
+// -----------------------------
 // 📏 Spacing
 // -----------------------------
 $spacer: 1rem;

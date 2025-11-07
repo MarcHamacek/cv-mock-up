@@ -16,6 +16,18 @@
 @include font-weight-utilities($font-weights);
 
 // -----------------------------
+// 🔲 Borders
+// -----------------------------
+@include border-utilities(
+  $border-sides,
+  $border-widths,
+  $border-styles,
+  $border-colors,
+  $grid-breakpoints
+);
+@include border-radius-utilities($border-radius);
+
+// -----------------------------
 // 📏 Spacing
 // -----------------------------
 @include margin-utilities($spacers);

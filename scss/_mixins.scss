@@ -6,7 +6,7 @@
     .text-#{$name} {
       color: $color !important;
     }
-    @each $breakpoint, $value in $breakpoints {
+    @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
         .text-#{$name}-#{$breakpoint} {
           color: $color !important;
@@ -21,7 +21,7 @@
     .bg-#{$name} {
       background-color: $color !important;
     }
-    @each $breakpoint, $value in $breakpoints {
+    @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
         .bg-#{$name}-#{$breakpoint} {
           background-color: $color !important;
@@ -39,7 +39,7 @@
     .#{$name} {
       font-size: $size !important;
     }
-    @each $breakpoint, $value in $breakpoints {
+    @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
         .#{$name}-#{$breakpoint} {
           font-size: $size !important;
@@ -54,10 +54,83 @@
     .fw-#{$name} {
       font-weight: $weight !important;
     }
-    @each $breakpoint, $value in $breakpoints {
+    @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
         .fw-#{$name}-#{$breakpoint} {
           font-weight: $weight !important;
+        }
+      }
+    }
+  }
+}
+
+// -----------------------------
+// 🔲 Borders
+// -----------------------------
+// helper: emit correct border properties depending on side key
+@mixin emit-border($side-key, $width-value, $style-value, $color-value) {
+  @if $side-key == 'all' {
+    border: $width-value $style-value $color-value !important;
+  } @else {
+    border-#{$side-key}: $width-value $style-value $color-value !important;
+  }
+}
+
+@mixin border-utilities(
+  $border-sides,
+  $border-widths,
+  $border-styles,
+  $border-colors,
+  $breakpoints: $grid-breakpoints
+) {
+  @each $side-key, $side-value in $border-sides {
+    @each $width-name, $width-value in $border-widths {
+      @each $style-name, $style-value in $border-styles {
+        @each $color-name, $color-value in $border-colors {
+          .border-#{$side-key}-#{$width-name}-#{$style-name}-#{$color-name} {
+            @include emit-border(
+              $side-key,
+              $width-value,
+              $style-value,
+              $color-value
+            );
+          }
+        }
+      }
+    }
+    @each $breakpoint-key, $breakpoint-value in $breakpoints {
+      @include media-breakpoint-up($breakpoint-key) {
+        @each $width-name, $width-value in $border-widths {
+          @each $style-name, $style-value in $border-styles {
+            @each $color-name, $color-value in $border-colors {
+              .border-#{$side-key}-#{$width-name}-#{$style-name}-#{$color-name}-#{$breakpoint-key} {
+                @include emit-border(
+                  $side-key,
+                  $width-value,
+                  $style-value,
+                  $color-value
+                );
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin border-radius-utilities(
+  $border-radius,
+  $breakpoints: $grid-breakpoints
+) {
+  @each $name, $radius in $border-radius {
+    .border-radius-#{$name} {
+      border-radius: $radius !important;
+    }
+    @each $breakpoint, $width in $breakpoints {
+      @include media-breakpoint-up($breakpoint) {
+        .border-radius-#{$name}-#{$breakpoint} {
+          border-radius: $radius !important;
         }
       }
     }
@@ -147,7 +220,7 @@
       padding-top: $value !important;
       padding-bottom: $value !important;
     }
-    @each $breakpoint, $value in $breakpoints {
+    @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
         .p-#{$key}-#{$breakpoint} {
           padding: $value !important;
