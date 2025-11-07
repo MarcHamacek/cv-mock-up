@@ -92,7 +92,7 @@
       margin-top: $value !important;
       margin-bottom: $value !important;
     }
-    @each $breakpoint, $value in $breakpoints {
+    @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
         .m-#{$key}-#{$breakpoint} {
           margin: $value !important;
