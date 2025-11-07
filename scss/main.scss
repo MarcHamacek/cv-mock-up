@@ -177,25 +177,6 @@ body {
     &--item_date {
       width: 550px;
     }
-    &--item_list {
-      display: inline-block;
-      height: 14px;
-      width: 14px;
-      background: $primary;
-      position: relative;
-    }
-    &--item_list::after {
-      content: '';
-      display: inline-block;
-      height: 6px;
-      width: 6px;
-      background: $primary;
-      border-radius: 50%;
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      border: 2px solid white;
-    }
     &--recommandations {
       display: flex;
       flex-direction: row;
@@ -207,7 +188,6 @@ i.puce_2 {
   display: inline-block;
   height: 10px;
   width: 10px;
-  background: $primary;
 }
 
 @media all and (max-width: 1200px) {
