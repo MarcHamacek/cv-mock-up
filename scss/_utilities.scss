@@ -32,6 +32,7 @@
 // -----------------------------
 @include display-utilities($display-values);
 @include flex-direction-utilities($flex-directions);
+@include justify-content-utilities($justify-content);
 
 // -----------------------------
 // 📏 Spacing

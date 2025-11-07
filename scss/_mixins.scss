@@ -173,6 +173,24 @@
   }
 }
 
+@mixin justify-content-utilities(
+  $justify-content,
+  $breakpoints: $grid-breakpoints
+) {
+  @each $name, $value in $justify-content {
+    .justify-#{$name} {
+      justify-content: $value !important;
+    }
+    @each $breakpoint, $width in $breakpoints {
+      @include media-breakpoint-up($breakpoint) {
+        .justify-#{$name}-#{$breakpoint} {
+          justify-content: $value !important;
+        }
+      }
+    }
+  }
+}
+
 // -----------------------------
 // 📏 Spacing
 // -----------------------------

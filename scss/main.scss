@@ -145,10 +145,8 @@ body {
   }
   &__block {
     &--icons {
-      justify-content: space-around;
       vertical-align: top;
     }
-
     &--icon {
       height: 75px;
       width: 75px;
@@ -162,9 +160,6 @@ body {
     height: 140px;
   }
   &__content {
-    &--item {
-      justify-content: space-between;
-    }
     &--item_date {
       width: 550px;
     }
