@@ -3555,95 +3555,31 @@ i.puce_2 {
   .aside {
     width: 100%;
   }
-  .aside__block--contact {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
   .main {
     width: 100%;
   }
 }
 @media all and (max-width: 768px) {
-  .aside__block--contact {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .aside__block--article {
-    margin: 40px 50px auto 50px;
-  }
-  .main__header {
-    margin-top: 80px;
-  }
-  .main__header--name {
-    margin-left: 50px;
-  }
-  .main__header--job {
-    margin-left: 50px;
-  }
-  .main__content {
-    margin-top: 80px;
-  }
   .main__content--item {
     flex-direction: column;
-    margin-bottom: 40px;
   }
   .main__content--item_date {
     width: auto;
-  }
-  .main__content--item_city {
-    margin-left: 0;
-  }
-  .main__content--item_title {
-    margin-top: 20px;
   }
   .main__content--recommandations {
     flex-direction: column;
   }
-  .main__content--recommandation_item {
-    margin-left: 0;
-    margin-top: 28px;
-  }
 }
 @media all and (max-width: 576px) {
-  .fa {
-    margin-right: 10px;
-  }
-  .aside__block--contact {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
   .aside__block--icon {
     height: 60px;
     width: 60px;
   }
-  .main__header {
-    margin-top: 80px;
-  }
-  .main__header--name {
-    margin-left: 10px;
-  }
-  .main__header--job {
-    margin-left: 10px;
-  }
-  .main__content {
-    margin-top: 80px;
-  }
   .main__content--item {
     flex-direction: column;
-    margin-bottom: 40px;
   }
   .main__content--item_date {
     width: auto;
-  }
-  .main__content--item_city {
-    margin-left: 0;
-  }
-  .main__content--item_title {
-    margin-top: 12px;
-  }
-  .main__content--recommandations_item {
-    margin-left: 0;
-    margin-top: 28px;
   }
 }
 
