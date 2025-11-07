@@ -15235,6 +15235,204 @@
     justify-content: space-evenly !important;
   }
 }
+.vertical-baseline {
+  vertical-align: baseline !important;
+}
+
+.vertical-baseline-xs {
+  vertical-align: baseline !important;
+}
+
+@media (min-width: 576px) {
+  .vertical-baseline-sm {
+    vertical-align: baseline !important;
+  }
+}
+@media (min-width: 768px) {
+  .vertical-baseline-md {
+    vertical-align: baseline !important;
+  }
+}
+@media (min-width: 992px) {
+  .vertical-baseline-lg {
+    vertical-align: baseline !important;
+  }
+}
+@media (min-width: 1200px) {
+  .vertical-baseline-xl {
+    vertical-align: baseline !important;
+  }
+}
+@media (min-width: 1400px) {
+  .vertical-baseline-xxl {
+    vertical-align: baseline !important;
+  }
+}
+.vertical-top {
+  vertical-align: top !important;
+}
+
+.vertical-top-xs {
+  vertical-align: top !important;
+}
+
+@media (min-width: 576px) {
+  .vertical-top-sm {
+    vertical-align: top !important;
+  }
+}
+@media (min-width: 768px) {
+  .vertical-top-md {
+    vertical-align: top !important;
+  }
+}
+@media (min-width: 992px) {
+  .vertical-top-lg {
+    vertical-align: top !important;
+  }
+}
+@media (min-width: 1200px) {
+  .vertical-top-xl {
+    vertical-align: top !important;
+  }
+}
+@media (min-width: 1400px) {
+  .vertical-top-xxl {
+    vertical-align: top !important;
+  }
+}
+.vertical-middle {
+  vertical-align: middle !important;
+}
+
+.vertical-middle-xs {
+  vertical-align: middle !important;
+}
+
+@media (min-width: 576px) {
+  .vertical-middle-sm {
+    vertical-align: middle !important;
+  }
+}
+@media (min-width: 768px) {
+  .vertical-middle-md {
+    vertical-align: middle !important;
+  }
+}
+@media (min-width: 992px) {
+  .vertical-middle-lg {
+    vertical-align: middle !important;
+  }
+}
+@media (min-width: 1200px) {
+  .vertical-middle-xl {
+    vertical-align: middle !important;
+  }
+}
+@media (min-width: 1400px) {
+  .vertical-middle-xxl {
+    vertical-align: middle !important;
+  }
+}
+.vertical-bottom {
+  vertical-align: bottom !important;
+}
+
+.vertical-bottom-xs {
+  vertical-align: bottom !important;
+}
+
+@media (min-width: 576px) {
+  .vertical-bottom-sm {
+    vertical-align: bottom !important;
+  }
+}
+@media (min-width: 768px) {
+  .vertical-bottom-md {
+    vertical-align: bottom !important;
+  }
+}
+@media (min-width: 992px) {
+  .vertical-bottom-lg {
+    vertical-align: bottom !important;
+  }
+}
+@media (min-width: 1200px) {
+  .vertical-bottom-xl {
+    vertical-align: bottom !important;
+  }
+}
+@media (min-width: 1400px) {
+  .vertical-bottom-xxl {
+    vertical-align: bottom !important;
+  }
+}
+.vertical-sub {
+  vertical-align: sub !important;
+}
+
+.vertical-sub-xs {
+  vertical-align: sub !important;
+}
+
+@media (min-width: 576px) {
+  .vertical-sub-sm {
+    vertical-align: sub !important;
+  }
+}
+@media (min-width: 768px) {
+  .vertical-sub-md {
+    vertical-align: sub !important;
+  }
+}
+@media (min-width: 992px) {
+  .vertical-sub-lg {
+    vertical-align: sub !important;
+  }
+}
+@media (min-width: 1200px) {
+  .vertical-sub-xl {
+    vertical-align: sub !important;
+  }
+}
+@media (min-width: 1400px) {
+  .vertical-sub-xxl {
+    vertical-align: sub !important;
+  }
+}
+.vertical-text-top {
+  vertical-align: text-top !important;
+}
+
+.vertical-text-top-xs {
+  vertical-align: text-top !important;
+}
+
+@media (min-width: 576px) {
+  .vertical-text-top-sm {
+    vertical-align: text-top !important;
+  }
+}
+@media (min-width: 768px) {
+  .vertical-text-top-md {
+    vertical-align: text-top !important;
+  }
+}
+@media (min-width: 992px) {
+  .vertical-text-top-lg {
+    vertical-align: text-top !important;
+  }
+}
+@media (min-width: 1200px) {
+  .vertical-text-top-xl {
+    vertical-align: text-top !important;
+  }
+}
+@media (min-width: 1400px) {
+  .vertical-text-top-xxl {
+    vertical-align: text-top !important;
+  }
+}
 .m-auto {
   margin: auto !important;
 }
@@ -18111,9 +18309,6 @@ body {
 }
 .aside__header {
   height: 140px;
-}
-.aside__block--icons {
-  vertical-align: top;
 }
 .aside__block--icon {
   height: 75px;

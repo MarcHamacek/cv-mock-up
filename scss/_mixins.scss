@@ -191,6 +191,24 @@
   }
 }
 
+@mixin vertical-align-utilities(
+  $vertical-align,
+  $breakpoints: $grid-breakpoints
+) {
+  @each $name, $value in $vertical-align {
+    .vertical-#{$name} {
+      vertical-align: $value !important;
+    }
+    @each $breakpoint, $width in $breakpoints {
+      @include media-breakpoint-up($breakpoint) {
+        .vertical-#{$name}-#{$breakpoint} {
+          vertical-align: $value !important;
+        }
+      }
+    }
+  }
+}
+
 // -----------------------------
 // 📏 Spacing
 // -----------------------------

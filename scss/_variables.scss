@@ -108,6 +108,15 @@ $justify-content: (
   evenly: space-evenly,
 );
 
+$vertical-align: (
+  baseline: baseline,
+  top: top,
+  middle: middle,
+  bottom: bottom,
+  sub: sub,
+  text-top: text-top,
+);
+
 // -----------------------------
 // 📏 Spacing
 // -----------------------------
