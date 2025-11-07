@@ -3464,6 +3464,11 @@ body {
   width: 1200px;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
 .aside {
   width: 35%;
 }
@@ -3538,11 +3543,6 @@ i.puce_2 {
   width: 10px;
   background: #feca07;
   border-radius: 50%;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
 }
 
 @media all and (max-width: 1200px) {
