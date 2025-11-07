@@ -28,6 +28,12 @@
 @include border-radius-utilities($border-radius);
 
 // -----------------------------
+// 🧱 Display
+// -----------------------------
+@include display-utilities($display-values);
+@include flex-direction-utilities($flex-directions);
+
+// -----------------------------
 // 📏 Spacing
 // -----------------------------
 @include margin-utilities($spacers);

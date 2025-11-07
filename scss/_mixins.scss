@@ -138,6 +138,42 @@
 }
 
 // -----------------------------
+// 🧱 Display
+// -----------------------------
+@mixin display-utilities($display-values, $breakpoints: $grid-breakpoints) {
+  @each $name, $value in $display-values {
+    .d-#{$name} {
+      display: $value !important;
+    }
+    @each $breakpoint, $width in $breakpoints {
+      @include media-breakpoint-up($breakpoint) {
+        .d-#{$name}-#{$breakpoint} {
+          display: $value !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin flex-direction-utilities(
+  $flex-directions,
+  $breakpoints: $grid-breakpoints
+) {
+  @each $name, $value in $flex-directions {
+    .flex-#{$name} {
+      flex-direction: $value !important;
+    }
+    @each $breakpoint, $width in $breakpoints {
+      @include media-breakpoint-up($breakpoint) {
+        .flex-#{$name}-#{$breakpoint} {
+          flex-direction: $value !important;
+        }
+      }
+    }
+  }
+}
+
+// -----------------------------
 // 📏 Spacing
 // -----------------------------
 @mixin margin-utilities($spacers, $breakpoints: $grid-breakpoints) {

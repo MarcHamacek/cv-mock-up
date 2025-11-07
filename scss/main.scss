@@ -138,11 +138,6 @@ body {
   width: 1200px;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-}
-
 .aside {
   width: 35%;
   &__header {
@@ -150,8 +145,6 @@ body {
   }
   &__block {
     &--icons {
-      display: flex;
-      flex-direction: row;
       justify-content: space-around;
       vertical-align: top;
     }
@@ -170,22 +163,15 @@ body {
   }
   &__content {
     &--item {
-      display: flex;
-      flex-direction: row;
       justify-content: space-between;
     }
     &--item_date {
       width: 550px;
     }
-    &--recommandations {
-      display: flex;
-      flex-direction: row;
-    }
   }
 }
 
-i.puce_2 {
-  display: inline-block;
+.puce_2 {
   height: 10px;
   width: 10px;
 }
