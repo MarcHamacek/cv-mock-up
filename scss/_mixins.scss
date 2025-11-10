@@ -140,8 +140,8 @@
 // -----------------------------
 // 🧱 Display
 // -----------------------------
-@mixin display-utilities($display-values, $breakpoints: $grid-breakpoints) {
-  @each $name, $value in $display-values {
+@mixin display-utilities($displays, $breakpoints: $grid-breakpoints) {
+  @each $name, $value in $displays {
     .d-#{$name} {
       display: $value !important;
     }

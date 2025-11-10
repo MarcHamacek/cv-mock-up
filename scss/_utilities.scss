@@ -24,7 +24,7 @@
 // -----------------------------
 // 🧱 Display
 // -----------------------------
-@include display-utilities($display-values);
+@include display-utilities($displays);
 @include flex-direction-utilities($flex-directions);
 @include justify-content-utilities($justify-content);
 @include vertical-align-utilities($vertical-align);
