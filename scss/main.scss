@@ -1,5 +1,5 @@
 // 1. Abstracts
-@use 'abstracts/variables';
+@use 'abstracts/variables' as *;
 
 // 2. Base styles
 @use 'base/reset';
