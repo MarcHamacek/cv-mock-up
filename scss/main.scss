@@ -1,10 +1,12 @@
-@use 'variables' as *;
-@use 'mixins';
-@use 'utilities';
-@use 'typography';
+// 1. Abstracts
+@use 'abstracts/variables';
 
 // 2. Base styles
 @use 'base/reset';
+
+@use 'mixins';
+@use 'utilities';
+@use 'typography';
 
 // Code for Responsive [WIP]
 @media all and (max-width: 1200px) {
