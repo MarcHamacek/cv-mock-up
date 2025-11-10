@@ -1,32 +1,5 @@
 @forward 'variables/colors';
-
-// -----------------------------
-// ✍️ Typography
-// -----------------------------
-$font-family-base: 'Roboto Regular', 'Roboto', Arial, sans-serif;
-
-$font-sizes: (
-  fs-xs: 0.75rem,
-  fs-sm: 0.875rem,
-  fs-md: 1rem,
-  fs-lg: 1.125rem,
-  fs-xl: 1.5rem,
-  fs-xxl: 4rem,
-);
-
-$font-weights: (
-  thin: 100,
-  extra-light: 200,
-  light: 300,
-  normal: 400,
-  medium: 500,
-  semi-bold: 600,
-  bold: 700,
-  bolder: 800,
-  extra-bold: 900,
-);
-
-$line-height-base: 1.5;
+@forward 'variables/typography';
 
 // -----------------------------
 // 🔲 Borders
