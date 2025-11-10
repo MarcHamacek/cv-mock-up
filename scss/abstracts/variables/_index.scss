@@ -3,21 +3,7 @@
 @forward 'borders';
 @forward 'layout';
 @forward 'sizing';
-
-// -----------------------------
-// 📏 Spacing
-// -----------------------------
-$spacer: 1rem;
-
-$spacers: (
-  auto: auto,
-  0: 0,
-  1: $spacer * 0.25,
-  2: $spacer * 0.5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-);
+@forward 'spacing';
 
 // -----------------------------
 // 🧭 Breakpoints
