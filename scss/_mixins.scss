@@ -209,6 +209,27 @@
   }
 }
 
+@mixin size-utilities($size-values, $breakpoints: $grid-breakpoints) {
+  @each $key, $value in $size-values {
+    .w-#{$key} {
+      width: #{$value};
+    }
+    .h-#{$key} {
+      height: #{$value};
+    }
+    @each $breakpoint, $width in $breakpoints {
+      @include media-breakpoint-up($breakpoint) {
+        .w-#{$key}-#{$breakpoint} {
+          width: #{$value};
+        }
+        .h-#{$key}-#{$breakpoint} {
+          height: #{$value};
+        }
+      }
+    }
+  }
+}
+
 // -----------------------------
 // 📏 Spacing
 // -----------------------------

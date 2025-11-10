@@ -35,6 +35,8 @@
 @include justify-content-utilities($justify-content);
 @include vertical-align-utilities($vertical-align);
 
+@include size-utilities($size-values);
+
 // -----------------------------
 // 📏 Spacing
 // -----------------------------
