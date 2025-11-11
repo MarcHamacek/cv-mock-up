@@ -1,63 +1,9 @@
 // 1. Abstracts
 @use 'abstracts/variables' as *;
+@use 'mixins';
 
 // 2. Base styles
 @use 'base/reset';
 
-@use 'mixins';
-@use 'utilities';
 @use 'typography';
-
-// Code for Responsive [WIP]
-@media all and (max-width: 1200px) {
-  body {
-    width: 100%;
-  }
-  .container {
-    flex-direction: column;
-  }
-  .aside {
-    width: 100%;
-  }
-  .main {
-    width: 100%;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .main {
-    &__content {
-      &--item {
-        flex-direction: column;
-      }
-      &--item_date {
-        width: auto;
-      }
-      &--recommandations {
-        flex-direction: column;
-      }
-    }
-  }
-}
-
-@media all and (max-width: 576px) {
-  .aside {
-    &__block {
-      &--icon {
-        height: 60px;
-        width: 60px;
-      }
-    }
-  }
-
-  .main {
-    &__content {
-      &--item {
-        flex-direction: column;
-      }
-      &--item_date {
-        width: auto;
-      }
-    }
-  }
-}
+@use 'utilities';

@@ -11,10 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
-  <body class="m-auto fw-md w-75">
-    <div class="container d-flex flex-row-xl">
+  <body class="m-auto fw-md w-100 w-75-xl">
+    <div class="d-flex flex-column flex-row-xl">
       <!--Partie gauche du CV-->
-      <aside class="aside bg-primary w-35">
+      <aside class="aside bg-primary w-100 w-35-xl">
         <header
           class="aside__header h-128 text-center my-4 d-flex justify-center"
         >
@@ -87,7 +87,7 @@
         </section>
       </aside>
       <!--Partie principale du CV-->
-      <main class="main bg-light p-4 w-65">
+      <main class="main bg-light p-4 w-100 w-65-xl">
         <header class="main__header h-128 my-4 text-uppercase">
           <p class="main__header--name fs-xxl">
             <strong class="main__header--firstname text-primary">john</strong>
@@ -110,9 +110,9 @@
             >formation
           </h1>
           <section
-            class="main__content--item justify-between justify-between d-flex flex-row py-3 mb-5"
+            class="main__content--item justify-between d-flex flex-column flex-row-md py-3"
           >
-            <aside class="main__content--item_date w-50">
+            <aside class="main__content--item_date w-auto w-50-md">
               <i
                 class="puce_2 h-12 w-12 d-inline-block bg-primary bg-primary border-radius-circle mr-3"
               ></i>
@@ -134,9 +134,9 @@
             </article>
           </section>
           <section
-            class="main__content--item justify-between d-flex flex-row py-3"
+            class="main__content--item justify-between d-flex flex-column flex-row-md py-3"
           >
-            <aside class="main__content--item_date w-50">
+            <aside class="main__content--item_date w-auto w-50-md">
               <p>
                 <i
                   class="puce_2 h-12 w-12 d-inline-block bg-primary border-radius-circle mr-3"
@@ -168,9 +168,9 @@
             >expérience professionelle
           </h1>
           <section
-            class="main__content--item justify-between d-flex flex-row py-3"
+            class="main__content--item justify-between d-flex flex-column flex-row-md py-3"
           >
-            <aside class="main__content--item_date w-50">
+            <aside class="main__content--item_date w-auto w-50-md">
               <p>
                 <i
                   class="puce_2 h-12 w-12 d-inline-block bg-primary border-radius-circle mr-3"
@@ -194,9 +194,9 @@
             </article>
           </section>
           <section
-            class="main__content--item justify-between d-flex flex-row py-3"
+            class="main__content--item justify-between d-flex flex-column flex-row-md py-3"
           >
-            <aside class="main__content--item_date w-50">
+            <aside class="main__content--item_date w-auto w-50-md">
               <p>
                 <i
                   class="puce_2 h-12 w-12 d-inline-block bg-primary border-radius-circle mr-3"
@@ -220,9 +220,9 @@
             </article>
           </section>
           <section
-            class="main__content--item justify-between d-flex flex-row py-3"
+            class="main__content--item justify-between d-flex flex-column flex-row-md py-3"
           >
-            <aside class="main__content--item_date w-50">
+            <aside class="main__content--item_date w-auto w-50-md">
               <p>
                 <i
                   class="puce_2 h-12 w-12 d-inline-block d-inline-block bg-primary border-radius-circle mr-3"
@@ -253,7 +253,9 @@
             <i class="fa fa-pencil mr-4 text-primary" aria-hidden="true"></i
             >recommandations
           </h1>
-          <section class="main__content--recommandations d-flex flex-row my-4">
+          <section
+            class="main__content--recommandations d-flex flex-column flex-row-md my-4"
+          >
             <article
               class="main__content--recommandation_item ml-5-md ml-0 mt-3 mt-0-md"
             >
