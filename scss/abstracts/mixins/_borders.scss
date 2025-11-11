@@ -1,4 +1,4 @@
-@use '../variables' as *;
+@use '../variables' as vars;
 @use '../mixins/breakpoints' as *;
 
 @mixin emit-border($side-key, $width-value, $style-value, $color-value) {
@@ -14,7 +14,7 @@
   $border-widths,
   $border-styles,
   $border-colors,
-  $breakpoints: $grid-breakpoints
+  $breakpoints: vars.$grid-breakpoints
 ) {
   @each $side-key, $side-value in $border-sides {
     @each $width-name, $width-value in $border-widths {
@@ -54,7 +54,7 @@
 
 @mixin border-radius-utilities(
   $border-radius,
-  $breakpoints: $grid-breakpoints
+  $breakpoints: vars.$grid-breakpoints
 ) {
   @each $name, $radius in $border-radius {
     .border-radius-#{$name} {

@@ -1,7 +1,7 @@
-@use '../variables' as *;
+@use '../variables' as vars;
 @use '../mixins/breakpoints' as *;
 
-@mixin font-size-utilities($sizes, $breakpoints: $grid-breakpoints) {
+@mixin font-size-utilities($sizes, $breakpoints: vars.$grid-breakpoints) {
   @each $name, $size in $sizes {
     .#{$name} {
       font-size: $size !important;
@@ -18,7 +18,7 @@
   }
 }
 
-@mixin font-weight-utilities($weights, $breakpoints: $grid-breakpoints) {
+@mixin font-weight-utilities($weights, $breakpoints: vars.$grid-breakpoints) {
   @each $name, $weight in $weights {
     .fw-#{$name} {
       font-weight: $weight !important;
