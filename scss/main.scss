@@ -1,6 +1,4 @@
-// 1. Abstracts
-@use 'abstracts/variables' as *;
-@use 'abstracts/mixins' as *;
+@use 'abstracts' as *;
 
 // 2. Base styles
 @use 'base/reset';
