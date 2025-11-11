@@ -8,8 +8,10 @@
     }
     @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
-        .text-#{$name}-#{$breakpoint} {
-          color: $color !important;
+        @each $name, $color in $colors {
+          .text-#{$name}-#{$breakpoint} {
+            color: $color !important;
+          }
         }
       }
     }
@@ -23,8 +25,10 @@
     }
     @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
-        .bg-#{$name}-#{$breakpoint} {
-          background-color: $color !important;
+        @each $name, $color in $colors {
+          .bg-#{$name}-#{$breakpoint} {
+            background-color: $color !important;
+          }
         }
       }
     }
@@ -41,8 +45,10 @@
     }
     @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
-        .#{$name}-#{$breakpoint} {
-          font-size: $size !important;
+        @each $name, $size in $sizes {
+          .#{$name}-#{$breakpoint} {
+            font-size: $size !important;
+          }
         }
       }
     }
@@ -56,8 +62,10 @@
     }
     @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
-        .fw-#{$name}-#{$breakpoint} {
-          font-weight: $weight !important;
+        @each $name, $weight in $weights {
+          .fw-#{$name}-#{$breakpoint} {
+            font-weight: $weight !important;
+          }
         }
       }
     }
@@ -67,7 +75,6 @@
 // -----------------------------
 // 🔲 Borders
 // -----------------------------
-// helper: emit correct border properties depending on side key
 @mixin emit-border($side-key, $width-value, $style-value, $color-value) {
   @if $side-key == 'all' {
     border: $width-value $style-value $color-value !important;
@@ -129,8 +136,10 @@
     }
     @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
-        .border-radius-#{$name}-#{$breakpoint} {
-          border-radius: $radius !important;
+        @each $name, $radius in $border-radius {
+          .border-radius-#{$name}-#{$breakpoint} {
+            border-radius: $radius !important;
+          }
         }
       }
     }
@@ -147,8 +156,10 @@
     }
     @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
-        .d-#{$name}-#{$breakpoint} {
-          display: $value !important;
+        @each $name, $value in $displays {
+          .d-#{$name}-#{$breakpoint} {
+            display: $value !important;
+          }
         }
       }
     }
@@ -163,8 +174,10 @@
     .flex-#{$name} {
       flex-direction: $value !important;
     }
-    @each $breakpoint, $width in $breakpoints {
-      @include media-breakpoint-up($breakpoint) {
+  }
+  @each $breakpoint, $width in $breakpoints {
+    @include media-breakpoint-up($breakpoint) {
+      @each $name, $value in $flex-directions {
         .flex-#{$name}-#{$breakpoint} {
           flex-direction: $value !important;
         }
@@ -183,8 +196,10 @@
     }
     @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
-        .justify-#{$name}-#{$breakpoint} {
-          justify-content: $value !important;
+        @each $name, $value in $justify-content {
+          .justify-#{$name}-#{$breakpoint} {
+            justify-content: $value !important;
+          }
         }
       }
     }
@@ -201,8 +216,10 @@
     }
     @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
-        .vertical-#{$name}-#{$breakpoint} {
-          vertical-align: $value !important;
+        @each $name, $value in $vertical-align {
+          .vertical-#{$name}-#{$breakpoint} {
+            vertical-align: $value !important;
+          }
         }
       }
     }
@@ -219,11 +236,13 @@
     }
     @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
-        .w-#{$key}-#{$breakpoint} {
-          width: #{$value};
-        }
-        .h-#{$key}-#{$breakpoint} {
-          height: #{$value};
+        @each $key, $value in $size-values {
+          .w-#{$key}-#{$breakpoint} {
+            width: #{$value};
+          }
+          .h-#{$key}-#{$breakpoint} {
+            height: #{$value};
+          }
         }
       }
     }
@@ -260,28 +279,30 @@
     }
     @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
-        .m-#{$key}-#{$breakpoint} {
-          margin: $value !important;
-        }
-        .mt-#{$key}-#{$breakpoint} {
-          margin-top: $value !important;
-        }
-        .mb-#{$key}-#{$breakpoint} {
-          margin-bottom: $value !important;
-        }
-        .ml-#{$key}-#{$breakpoint} {
-          margin-left: $value !important;
-        }
-        .mr-#{$key}-#{$breakpoint} {
-          margin-right: $value !important;
-        }
-        .mx-#{$key}-#{$breakpoint} {
-          margin-left: $value !important;
-          margin-right: $value !important;
-        }
-        .my-#{$key}-#{$breakpoint} {
-          margin-top: $value !important;
-          margin-bottom: $value !important;
+        @each $key, $value in $spacers {
+          .m-#{$key}-#{$breakpoint} {
+            margin: $value !important;
+          }
+          .mt-#{$key}-#{$breakpoint} {
+            margin-top: $value !important;
+          }
+          .mb-#{$key}-#{$breakpoint} {
+            margin-bottom: $value !important;
+          }
+          .ml-#{$key}-#{$breakpoint} {
+            margin-left: $value !important;
+          }
+          .mr-#{$key}-#{$breakpoint} {
+            margin-right: $value !important;
+          }
+          .mx-#{$key}-#{$breakpoint} {
+            margin-left: $value !important;
+            margin-right: $value !important;
+          }
+          .my-#{$key}-#{$breakpoint} {
+            margin-top: $value !important;
+            margin-bottom: $value !important;
+          }
         }
       }
     }
@@ -315,28 +336,30 @@
     }
     @each $breakpoint, $width in $breakpoints {
       @include media-breakpoint-up($breakpoint) {
-        .p-#{$key}-#{$breakpoint} {
-          padding: $value !important;
-        }
-        .pt-#{$key}-#{$breakpoint} {
-          padding-top: $value !important;
-        }
-        .pb-#{$key}-#{$breakpoint} {
-          padding-bottom: $value !important;
-        }
-        .pl-#{$key}-#{$breakpoint} {
-          padding-left: $value !important;
-        }
-        .pr-#{$key}-#{$breakpoint} {
-          padding-right: $value !important;
-        }
-        .px-#{$key}-#{$breakpoint} {
-          padding-left: $value !important;
-          padding-right: $value !important;
-        }
-        .py-#{$key}-#{$breakpoint} {
-          padding-top: $value !important;
-          padding-bottom: $value !important;
+        @each $key, $value in $spacers {
+          .p-#{$key}-#{$breakpoint} {
+            padding: $value !important;
+          }
+          .pt-#{$key}-#{$breakpoint} {
+            padding-top: $value !important;
+          }
+          .pb-#{$key}-#{$breakpoint} {
+            padding-bottom: $value !important;
+          }
+          .pl-#{$key}-#{$breakpoint} {
+            padding-left: $value !important;
+          }
+          .pr-#{$key}-#{$breakpoint} {
+            padding-right: $value !important;
+          }
+          .px-#{$key}-#{$breakpoint} {
+            padding-left: $value !important;
+            padding-right: $value !important;
+          }
+          .py-#{$key}-#{$breakpoint} {
+            padding-top: $value !important;
+            padding-bottom: $value !important;
+          }
         }
       }
     }
@@ -346,15 +369,13 @@
 // -----------------------------
 // 🧭 Breakpoints
 // -----------------------------
-@mixin media-breakpoint-up($breakpoint) {
-  $value: map.get($grid-breakpoints, $breakpoint);
-  @if $value == null {
-    @warn "⚠️ No value for this breakpoint #{$breakpoint}.";
-  } @else if $value == 0 {
-    @content;
-  } @else {
-    @media (min-width: $value) {
+@mixin media-breakpoint-up($name) {
+  $breakpoint: map.get($grid-breakpoints, $name);
+  @if $breakpoint != null and $breakpoint != 0 {
+    @media (min-width: $breakpoint) {
       @content;
     }
+  } @else if $breakpoint == 0 {
+    @content;
   }
 }
