@@ -1,0 +1,13 @@
+@use '../variables' as *;
+@use 'sass:map' as map;
+
+@mixin media-breakpoint-up($name) {
+  $breakpoint: map.get($grid-breakpoints, $name);
+  @if $breakpoint != null and $breakpoint != 0 {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  } @else if $breakpoint == 0 {
+    @content;
+  }
+}
