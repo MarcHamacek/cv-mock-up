@@ -26,32 +26,32 @@
       margin-top: $value !important;
       margin-bottom: $value !important;
     }
-    @each $breakpoint, $width in $breakpoints {
-      @include mixin.media-breakpoint-up($breakpoint) {
-        @each $key, $value in $spacers {
-          .m-#{$key}-#{$breakpoint} {
-            margin: $value !important;
-          }
-          .mt-#{$key}-#{$breakpoint} {
-            margin-top: $value !important;
-          }
-          .mb-#{$key}-#{$breakpoint} {
-            margin-bottom: $value !important;
-          }
-          .ml-#{$key}-#{$breakpoint} {
-            margin-left: $value !important;
-          }
-          .mr-#{$key}-#{$breakpoint} {
-            margin-right: $value !important;
-          }
-          .mx-#{$key}-#{$breakpoint} {
-            margin-left: $value !important;
-            margin-right: $value !important;
-          }
-          .my-#{$key}-#{$breakpoint} {
-            margin-top: $value !important;
-            margin-bottom: $value !important;
-          }
+  }
+  @each $breakpoint, $width in $breakpoints {
+    @include mixin.media-breakpoint-up($breakpoint) {
+      @each $key, $value in $spacers {
+        .m-#{$key}-#{$breakpoint} {
+          margin: $value !important;
+        }
+        .mt-#{$key}-#{$breakpoint} {
+          margin-top: $value !important;
+        }
+        .mb-#{$key}-#{$breakpoint} {
+          margin-bottom: $value !important;
+        }
+        .ml-#{$key}-#{$breakpoint} {
+          margin-left: $value !important;
+        }
+        .mr-#{$key}-#{$breakpoint} {
+          margin-right: $value !important;
+        }
+        .mx-#{$key}-#{$breakpoint} {
+          margin-left: $value !important;
+          margin-right: $value !important;
+        }
+        .my-#{$key}-#{$breakpoint} {
+          margin-top: $value !important;
+          margin-bottom: $value !important;
         }
       }
     }
@@ -83,32 +83,32 @@
       padding-top: $value !important;
       padding-bottom: $value !important;
     }
-    @each $breakpoint, $width in $breakpoints {
-      @include mixin.media-breakpoint-up($breakpoint) {
-        @each $key, $value in $spacers {
-          .p-#{$key}-#{$breakpoint} {
-            padding: $value !important;
-          }
-          .pt-#{$key}-#{$breakpoint} {
-            padding-top: $value !important;
-          }
-          .pb-#{$key}-#{$breakpoint} {
-            padding-bottom: $value !important;
-          }
-          .pl-#{$key}-#{$breakpoint} {
-            padding-left: $value !important;
-          }
-          .pr-#{$key}-#{$breakpoint} {
-            padding-right: $value !important;
-          }
-          .px-#{$key}-#{$breakpoint} {
-            padding-left: $value !important;
-            padding-right: $value !important;
-          }
-          .py-#{$key}-#{$breakpoint} {
-            padding-top: $value !important;
-            padding-bottom: $value !important;
-          }
+  }
+  @each $breakpoint, $width in $breakpoints {
+    @include mixin.media-breakpoint-up($breakpoint) {
+      @each $key, $value in $spacers {
+        .p-#{$key}-#{$breakpoint} {
+          padding: $value !important;
+        }
+        .pt-#{$key}-#{$breakpoint} {
+          padding-top: $value !important;
+        }
+        .pb-#{$key}-#{$breakpoint} {
+          padding-bottom: $value !important;
+        }
+        .pl-#{$key}-#{$breakpoint} {
+          padding-left: $value !important;
+        }
+        .pr-#{$key}-#{$breakpoint} {
+          padding-right: $value !important;
+        }
+        .px-#{$key}-#{$breakpoint} {
+          padding-left: $value !important;
+          padding-right: $value !important;
+        }
+        .py-#{$key}-#{$breakpoint} {
+          padding-top: $value !important;
+          padding-bottom: $value !important;
         }
       }
     }

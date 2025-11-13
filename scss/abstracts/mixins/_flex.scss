@@ -6,12 +6,12 @@
     .d-#{$name} {
       display: $value !important;
     }
-    @each $breakpoint, $width in $breakpoints {
-      @include mixin.media-breakpoint-up($breakpoint) {
-        @each $name, $value in $displays {
-          .d-#{$name}-#{$breakpoint} {
-            display: $value !important;
-          }
+  }
+  @each $breakpoint, $width in $breakpoints {
+    @include mixin.media-breakpoint-up($breakpoint) {
+      @each $name, $value in $displays {
+        .d-#{$name}-#{$breakpoint} {
+          display: $value !important;
         }
       }
     }
@@ -46,12 +46,12 @@
     .justify-#{$name} {
       justify-content: $value !important;
     }
-    @each $breakpoint, $width in $breakpoints {
-      @include mixin.media-breakpoint-up($breakpoint) {
-        @each $name, $value in $justify-content {
-          .justify-#{$name}-#{$breakpoint} {
-            justify-content: $value !important;
-          }
+  }
+  @each $breakpoint, $width in $breakpoints {
+    @include mixin.media-breakpoint-up($breakpoint) {
+      @each $name, $value in $justify-content {
+        .justify-#{$name}-#{$breakpoint} {
+          justify-content: $value !important;
         }
       }
     }
@@ -66,12 +66,12 @@
     .vertical-#{$name} {
       vertical-align: $value !important;
     }
-    @each $breakpoint, $width in $breakpoints {
-      @include mixin.media-breakpoint-up($breakpoint) {
-        @each $name, $value in $vertical-align {
-          .vertical-#{$name}-#{$breakpoint} {
-            vertical-align: $value !important;
-          }
+  }
+  @each $breakpoint, $width in $breakpoints {
+    @include mixin.media-breakpoint-up($breakpoint) {
+      @each $name, $value in $vertical-align {
+        .vertical-#{$name}-#{$breakpoint} {
+          vertical-align: $value !important;
         }
       }
     }

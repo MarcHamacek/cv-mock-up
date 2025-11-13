@@ -6,12 +6,12 @@
     .text-#{$name} {
       color: $color !important;
     }
-    @each $breakpoint, $width in $breakpoints {
-      @include mixin.media-breakpoint-up($breakpoint) {
-        @each $name, $color in $colors {
-          .text-#{$name}-#{$breakpoint} {
-            color: $color !important;
-          }
+  }
+  @each $breakpoint, $width in $breakpoints {
+    @include mixin.media-breakpoint-up($breakpoint) {
+      @each $name, $color in $colors {
+        .text-#{$name}-#{$breakpoint} {
+          color: $color !important;
         }
       }
     }
@@ -23,12 +23,12 @@
     .bg-#{$name} {
       background-color: $color !important;
     }
-    @each $breakpoint, $width in $breakpoints {
-      @include mixin.media-breakpoint-up($breakpoint) {
-        @each $name, $color in $colors {
-          .bg-#{$name}-#{$breakpoint} {
-            background-color: $color !important;
-          }
+  }
+  @each $breakpoint, $width in $breakpoints {
+    @include mixin.media-breakpoint-up($breakpoint) {
+      @each $name, $color in $colors {
+        .bg-#{$name}-#{$breakpoint} {
+          background-color: $color !important;
         }
       }
     }

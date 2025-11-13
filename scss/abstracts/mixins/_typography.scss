@@ -6,12 +6,12 @@
     .#{$name} {
       font-size: $size !important;
     }
-    @each $breakpoint, $width in $breakpoints {
-      @include mixin.media-breakpoint-up($breakpoint) {
-        @each $name, $size in $sizes {
-          .#{$name}-#{$breakpoint} {
-            font-size: $size !important;
-          }
+  }
+  @each $breakpoint, $width in $breakpoints {
+    @include mixin.media-breakpoint-up($breakpoint) {
+      @each $name, $size in $sizes {
+        .#{$name}-#{$breakpoint} {
+          font-size: $size !important;
         }
       }
     }
@@ -23,12 +23,12 @@
     .fw-#{$name} {
       font-weight: $weight !important;
     }
-    @each $breakpoint, $width in $breakpoints {
-      @include mixin.media-breakpoint-up($breakpoint) {
-        @each $name, $weight in $weights {
-          .fw-#{$name}-#{$breakpoint} {
-            font-weight: $weight !important;
-          }
+  }
+  @each $breakpoint, $width in $breakpoints {
+    @include mixin.media-breakpoint-up($breakpoint) {
+      @each $name, $weight in $weights {
+        .fw-#{$name}-#{$breakpoint} {
+          font-weight: $weight !important;
         }
       }
     }

@@ -9,15 +9,15 @@
     .h-#{$key} {
       height: #{$value};
     }
-    @each $breakpoint, $width in $breakpoints {
-      @include mixin.media-breakpoint-up($breakpoint) {
-        @each $key, $value in $size-values {
-          .w-#{$key}-#{$breakpoint} {
-            width: #{$value};
-          }
-          .h-#{$key}-#{$breakpoint} {
-            height: #{$value};
-          }
+  }
+  @each $breakpoint, $width in $breakpoints {
+    @include mixin.media-breakpoint-up($breakpoint) {
+      @each $key, $value in $size-values {
+        .w-#{$key}-#{$breakpoint} {
+          width: #{$value};
+        }
+        .h-#{$key}-#{$breakpoint} {
+          height: #{$value};
         }
       }
     }
