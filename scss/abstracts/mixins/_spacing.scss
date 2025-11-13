@@ -1,5 +1,5 @@
 @use '../variables' as vars;
-@use '../mixins/breakpoints' as *;
+@use '../mixins/breakpoints' as mixin;
 
 @mixin margin-utilities($spacers, $breakpoints: vars.$grid-breakpoints) {
   @each $key, $value in $spacers {
@@ -27,7 +27,7 @@
       margin-bottom: $value !important;
     }
     @each $breakpoint, $width in $breakpoints {
-      @include media-breakpoint-up($breakpoint) {
+      @include mixin.media-breakpoint-up($breakpoint) {
         @each $key, $value in $spacers {
           .m-#{$key}-#{$breakpoint} {
             margin: $value !important;
@@ -84,7 +84,7 @@
       padding-bottom: $value !important;
     }
     @each $breakpoint, $width in $breakpoints {
-      @include media-breakpoint-up($breakpoint) {
+      @include mixin.media-breakpoint-up($breakpoint) {
         @each $key, $value in $spacers {
           .p-#{$key}-#{$breakpoint} {
             padding: $value !important;
