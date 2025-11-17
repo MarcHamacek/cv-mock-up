@@ -1,20 +1,17 @@
-@use 'abstracts/variables' as *;
-@use 'abstracts/mixins' as *;
+@use '../abstracts' as abs;
 
-@include text-variants($colors);
-
-body {
-  font-family: $font-family-base;
-  line-height: $line-height-base;
-}
+@include abs.font-size-utilities(abs.$font-sizes);
+@include abs.font-weight-utilities(abs.$font-weights);
 
 /* Text Transform Utilities */
 .text-uppercase {
   text-transform: uppercase !important;
 }
+
 .text-lowercase {
   text-transform: lowercase !important;
 }
+
 .text-capitalize {
   text-transform: capitalize !important;
 }
@@ -23,6 +20,7 @@ body {
 .fst-italic {
   font-style: italic !important;
 }
+
 .fst-normal {
   font-style: normal !important;
 }
@@ -31,12 +29,15 @@ body {
 .text-center {
   text-align: center !important;
 }
+
 .text-start {
   text-align: left !important;
 }
+
 .text-end {
   text-align: right !important;
 }
+
 .text-justify {
   text-align: justify !important;
 }

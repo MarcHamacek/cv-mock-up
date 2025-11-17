@@ -10,6 +10,7 @@
       height: #{$value};
     }
   }
+
   @each $breakpoint, $width in $breakpoints {
     @include mixin.media-breakpoint-up($breakpoint) {
       @each $key, $value in $size-values {

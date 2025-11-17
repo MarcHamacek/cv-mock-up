@@ -7,6 +7,7 @@
       display: $value !important;
     }
   }
+
   @each $breakpoint, $width in $breakpoints {
     @include mixin.media-breakpoint-up($breakpoint) {
       @each $name, $value in $displays {
@@ -27,6 +28,7 @@
       flex-direction: $value !important;
     }
   }
+
   @each $breakpoint, $width in $breakpoints {
     @include mixin.media-breakpoint-up($breakpoint) {
       @each $name, $value in $flex-directions {
@@ -47,6 +49,7 @@
       justify-content: $value !important;
     }
   }
+
   @each $breakpoint, $width in $breakpoints {
     @include mixin.media-breakpoint-up($breakpoint) {
       @each $name, $value in $justify-content {
@@ -67,6 +70,7 @@
       vertical-align: $value !important;
     }
   }
+
   @each $breakpoint, $width in $breakpoints {
     @include mixin.media-breakpoint-up($breakpoint) {
       @each $name, $value in $vertical-align {

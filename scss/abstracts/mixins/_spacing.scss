@@ -1,116 +1,67 @@
 @use '../variables' as vars;
 @use '../mixins/breakpoints' as mixin;
+@use '../../utilities/generator' as gen;
 
 @mixin margin-utilities($spacers, $breakpoints: vars.$grid-breakpoints) {
-  @each $key, $value in $spacers {
-    .m-#{$key} {
-      margin: $value !important;
-    }
-    .mt-#{$key} {
-      margin-top: $value !important;
-    }
-    .mb-#{$key} {
-      margin-bottom: $value !important;
-    }
-    .ml-#{$key} {
-      margin-left: $value !important;
-    }
-    .mr-#{$key} {
-      margin-right: $value !important;
-    }
-    .mx-#{$key} {
-      margin-left: $value !important;
-      margin-right: $value !important;
-    }
-    .my-#{$key} {
-      margin-top: $value !important;
-      margin-bottom: $value !important;
-    }
-  }
-  @each $breakpoint, $width in $breakpoints {
-    @include mixin.media-breakpoint-up($breakpoint) {
-      @each $key, $value in $spacers {
-        .m-#{$key}-#{$breakpoint} {
-          margin: $value !important;
-        }
-        .mt-#{$key}-#{$breakpoint} {
-          margin-top: $value !important;
-        }
-        .mb-#{$key}-#{$breakpoint} {
-          margin-bottom: $value !important;
-        }
-        .ml-#{$key}-#{$breakpoint} {
-          margin-left: $value !important;
-        }
-        .mr-#{$key}-#{$breakpoint} {
-          margin-right: $value !important;
-        }
-        .mx-#{$key}-#{$breakpoint} {
-          margin-left: $value !important;
-          margin-right: $value !important;
-        }
-        .my-#{$key}-#{$breakpoint} {
-          margin-top: $value !important;
-          margin-bottom: $value !important;
-        }
-      }
-    }
-  }
+  // base (non-responsive)
+  @include gen.gen-prop($spacers, 'm-', 'margin');
+  @include gen.gen-prop($spacers, 'mt-', 'margin-top');
+  @include gen.gen-prop($spacers, 'mb-', 'margin-bottom');
+  @include gen.gen-prop($spacers, 'ml-', 'margin-left');
+  @include gen.gen-prop($spacers, 'mr-', 'margin-right');
+  @include gen.gen-prop-two($spacers, 'mx-', 'margin-left', 'margin-right');
+  @include gen.gen-prop-two($spacers, 'my-', 'margin-top', 'margin-bottom');
+
+  // responsive variants grouped by breakpoint
+  @include gen.gen-prop($spacers, 'm-', 'margin', $breakpoints);
+  @include gen.gen-prop($spacers, 'mt-', 'margin-top', $breakpoints);
+  @include gen.gen-prop($spacers, 'mb-', 'margin-bottom', $breakpoints);
+  @include gen.gen-prop($spacers, 'ml-', 'margin-left', $breakpoints);
+  @include gen.gen-prop($spacers, 'mr-', 'margin-right', $breakpoints);
+  @include gen.gen-prop-two(
+    $spacers,
+    'mx-',
+    'margin-left',
+    'margin-right',
+    $breakpoints
+  );
+  @include gen.gen-prop-two(
+    $spacers,
+    'my-',
+    'margin-top',
+    'margin-bottom',
+    $breakpoints
+  );
 }
 
 @mixin padding-utilities($spacers, $breakpoints: vars.$grid-breakpoints) {
-  @each $key, $value in $spacers {
-    .p-#{$key} {
-      padding: $value !important;
-    }
-    .pt-#{$key} {
-      padding-top: $value !important;
-    }
-    .pb-#{$key} {
-      padding-bottom: $value !important;
-    }
-    .pl-#{$key} {
-      padding-left: $value !important;
-    }
-    .pr-#{$key} {
-      padding-right: $value !important;
-    }
-    .px-#{$key} {
-      padding-left: $value !important;
-      padding-right: $value !important;
-    }
-    .py-#{$key} {
-      padding-top: $value !important;
-      padding-bottom: $value !important;
-    }
-  }
-  @each $breakpoint, $width in $breakpoints {
-    @include mixin.media-breakpoint-up($breakpoint) {
-      @each $key, $value in $spacers {
-        .p-#{$key}-#{$breakpoint} {
-          padding: $value !important;
-        }
-        .pt-#{$key}-#{$breakpoint} {
-          padding-top: $value !important;
-        }
-        .pb-#{$key}-#{$breakpoint} {
-          padding-bottom: $value !important;
-        }
-        .pl-#{$key}-#{$breakpoint} {
-          padding-left: $value !important;
-        }
-        .pr-#{$key}-#{$breakpoint} {
-          padding-right: $value !important;
-        }
-        .px-#{$key}-#{$breakpoint} {
-          padding-left: $value !important;
-          padding-right: $value !important;
-        }
-        .py-#{$key}-#{$breakpoint} {
-          padding-top: $value !important;
-          padding-bottom: $value !important;
-        }
-      }
-    }
-  }
+  // base
+  @include gen.gen-prop($spacers, 'p-', 'padding');
+  @include gen.gen-prop($spacers, 'pt-', 'padding-top');
+  @include gen.gen-prop($spacers, 'pb-', 'padding-bottom');
+  @include gen.gen-prop($spacers, 'pl-', 'padding-left');
+  @include gen.gen-prop($spacers, 'pr-', 'padding-right');
+  @include gen.gen-prop-two($spacers, 'px-', 'padding-left', 'padding-right');
+  @include gen.gen-prop-two($spacers, 'py-', 'padding-top', 'padding-bottom');
+
+  // responsive
+  @include gen.gen-prop($spacers, 'p-', 'padding', $breakpoints);
+  @include gen.gen-prop($spacers, 'pt-', 'padding-top', $breakpoints);
+  @include gen.gen-prop($spacers, 'pb-', 'padding-bottom', $breakpoints);
+  @include gen.gen-prop($spacers, 'pl-', 'padding-left', $breakpoints);
+  @include gen.gen-prop($spacers, 'pr-', 'padding-right', $breakpoints);
+  @include gen.gen-prop-two(
+    $spacers,
+    'px-',
+    'padding-left',
+    'padding-right',
+    $breakpoints
+  );
+  @include gen.gen-prop-two(
+    $spacers,
+    'py-',
+    'padding-top',
+    'padding-bottom',
+    $breakpoints
+  );
 }

@@ -1,0 +1,6 @@
+@use '../abstracts' as abs;
+
+@include abs.display-utilities(abs.$displays);
+@include abs.flex-direction-utilities(abs.$flex-directions);
+@include abs.justify-content-utilities(abs.$justify-content);
+@include abs.vertical-align-utilities(abs.$vertical-align);

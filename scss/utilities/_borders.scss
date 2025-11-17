@@ -1,0 +1,10 @@
+@use '../abstracts' as abs;
+
+@include abs.border-utilities(
+  abs.$border-sides,
+  abs.$border-widths,
+  abs.$border-styles,
+  abs.$colors,
+  abs.$grid-breakpoints
+);
+@include abs.border-radius-utilities(abs.$border-radius);
