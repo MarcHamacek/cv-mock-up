@@ -1,0 +1,31 @@
+{
+  "name": "cv-mock-up",
+  "version": "1.0.0",
+  "description": "Creation of a CV, integrating a mock-up design.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/main.scss:css/style.css",
+    "sass:watch": "sass --watch scss/main.scss:css/style.css",
+    "lint:css": "stylelint \"scss/**/*.scss\"",
+    "lint:css:fix": "stylelint \"scss/**/*.scss\" --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcHamacek/cv-mock-up.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MarcHamacek/cv-mock-up/issues"
+  },
+  "homepage": "https://github.com/MarcHamacek/cv-mock-up#readme",
+  "devDependencies": {
+    "postcss-scss": "^4.0.9",
+    "stylelint": "^16.25.0",
+    "stylelint-config-standard": "^39.0.1",
+    "stylelint-scss": "^6.12.1"
+  }
+}
