@@ -1,0 +1,57 @@
+@use '../abstracts/mixins/breakpoints' as breakpoints;
+
+// Simple generator helpers that assign CSS properties directly.
+// These avoid passing arguments to @content and keep the API straightforward.
+
+@mixin gen-prop($map, $prefix, $property, $breakpoints: null, $suffix: '') {
+  // base
+  @each $name, $value in $map {
+    .#{$prefix}#{$name}#{$suffix} {
+      #{$property}: $value !important;
+    }
+  }
+
+  // responsive
+  @if $breakpoints != null {
+    @each $breakpoint, $width in $breakpoints {
+      @include breakpoints.media-breakpoint-up($breakpoint) {
+        @each $name, $value in $map {
+          .#{$prefix}#{$name}#{$suffix}-#{$breakpoint} {
+            #{$property}: $value !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin gen-prop-two(
+  $map,
+  $prefix,
+  $property1,
+  $property2,
+  $breakpoints: null,
+  $suffix: ''
+) {
+  // base
+  @each $name, $value in $map {
+    .#{$prefix}#{$name}#{$suffix} {
+      #{$property1}: $value !important;
+      #{$property2}: $value !important;
+    }
+  }
+
+  // responsive
+  @if $breakpoints != null {
+    @each $breakpoint, $width in $breakpoints {
+      @include breakpoints.media-breakpoint-up($breakpoint) {
+        @each $name, $value in $map {
+          .#{$prefix}#{$name}#{$suffix}-#{$breakpoint} {
+            #{$property1}: $value !important;
+            #{$property2}: $value !important;
+          }
+        }
+      }
+    }
+  }
+}

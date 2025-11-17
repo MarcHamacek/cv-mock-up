@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass scss/input.scss:css/style.css",
-    "sass:watch": "sass --watch scss/input.scss:css/style.css"
+    "sass": "sass scss/main.scss:css/style.css",
+    "sass:watch": "sass --watch scss/main.scss:css/style.css",
+    "lint:css": "stylelint \"scss/**/*.scss\"",
+    "lint:css:fix": "stylelint \"scss/**/*.scss\" --fix"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/MarcHamacek/cv-mock-up/issues"
   },
-  "homepage": "https://github.com/MarcHamacek/cv-mock-up#readme"
+  "homepage": "https://github.com/MarcHamacek/cv-mock-up#readme",
+  "devDependencies": {
+    "postcss-scss": "^4.0.9",
+    "stylelint": "^16.25.0",
+    "stylelint-config-standard": "^39.0.1",
+    "stylelint-scss": "^6.12.1"
+  }
 }
