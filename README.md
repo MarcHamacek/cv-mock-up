@@ -10,3 +10,4 @@ This project was developed with HTML5 and CSS3 and is entirely responsive.
 ## Version 1.1
 
 - Migration from CSS to SCSS
+- First steps to a framework Bootstrap-like
