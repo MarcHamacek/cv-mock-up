@@ -17,4 +17,4 @@ To install the project:
 
 ## Version 2
 
-- Restructuration of the curiculum
+- Restructuration of the curriculum
