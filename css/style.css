@@ -20,9 +20,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 0.5rem;
+  margin: 0;
   font-weight: 600;
-  line-height: 1.2;
 }
 
 h1 {
@@ -15246,6 +15245,14 @@ q::after {
   height: 75%;
 }
 
+.w-90 {
+  width: 90%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -15382,6 +15389,14 @@ q::after {
   height: 75%;
 }
 
+.w-90-xs {
+  width: 90%;
+}
+
+.h-90-xs {
+  height: 90%;
+}
+
 .w-100-xs {
   width: 100%;
 }
@@ -15509,6 +15524,12 @@ q::after {
   .h-75-sm {
     height: 75%;
   }
+  .w-90-sm {
+    width: 90%;
+  }
+  .h-90-sm {
+    height: 90%;
+  }
   .w-100-sm {
     width: 100%;
   }
@@ -15612,6 +15633,12 @@ q::after {
   }
   .h-75-md {
     height: 75%;
+  }
+  .w-90-md {
+    width: 90%;
+  }
+  .h-90-md {
+    height: 90%;
   }
   .w-100-md {
     width: 100%;
@@ -15717,6 +15744,12 @@ q::after {
   .h-75-lg {
     height: 75%;
   }
+  .w-90-lg {
+    width: 90%;
+  }
+  .h-90-lg {
+    height: 90%;
+  }
   .w-100-lg {
     width: 100%;
   }
@@ -15821,6 +15854,12 @@ q::after {
   .h-75-xl {
     height: 75%;
   }
+  .w-90-xl {
+    width: 90%;
+  }
+  .h-90-xl {
+    height: 90%;
+  }
   .w-100-xl {
     width: 100%;
   }
@@ -15924,6 +15963,12 @@ q::after {
   }
   .h-75-xxl {
     height: 75%;
+  }
+  .w-90-xxl {
+    width: 90%;
+  }
+  .h-90-xxl {
+    height: 90%;
   }
   .w-100-xxl {
     width: 100%;
