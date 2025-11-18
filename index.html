@@ -12,18 +12,29 @@
   </head>
 
   <body class="m-auto fw-md w-100 w-75-xl">
+    <div
+      class="d-flex flex-column align-items-center justify-around-md text-center flex-row-md py-4 bg-light"
+    >
+      <div>
+        <img
+          class="border-all-5-solid-transparent border-radius-circle"
+          src="images/profile-picture.png"
+          alt="John Doe"
+        />
+      </div>
+      <div class="d-flex flex-column text-uppercase">
+        <p class="fs-xxl">
+          <span class="text-primary fw-bold">john</span>
+          doe
+        </p>
+        <p class="fs-xl fw-bold">
+          <span class="border-bottom-2-solid-primary">Dével</span>oppeur web
+          freelance
+        </p>
+      </div>
+    </div>
     <div class="d-flex flex-column flex-row-xl">
-      <!--Partie gauche du CV-->
       <aside class="aside bg-primary w-100 w-35-xl">
-        <header
-          class="aside__header h-128 text-center my-4 d-flex justify-center"
-        >
-          <img
-            class="aside__header--picture border-all-5-solid-transparent border-radius-circle"
-            src="images/profile-picture.png"
-            alt="John Doe"
-          />
-        </header>
         <section class="aside__block">
           <h3
             class="aside__block--title py-2 text-primary bg-secondary text-uppercase fs-xl fw-bold text-center"
@@ -86,19 +97,7 @@
           </p>
         </section>
       </aside>
-      <!--Partie principale du CV-->
       <main class="main bg-light p-4 w-100 w-65-xl">
-        <header class="main__header h-128 my-4 text-uppercase">
-          <p class="main__header--name fs-xxl">
-            <strong class="main__header--firstname text-primary">john</strong>
-            doe
-          </p>
-          <p class="main__header--job fs-xl fw-bold">
-            <span class="main__header--border_job border-bottom-2-solid-primary"
-              >Dével</span
-            >oppeur web freelance
-          </p>
-        </header>
         <section class="main__content mt-6">
           <h1
             class="main__content--title border-bottom-2-solid-primary mb-4 pb-2 fs-lg text-uppercase fw-bold"
