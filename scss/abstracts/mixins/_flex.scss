@@ -81,3 +81,42 @@
     }
   }
 }
+
+@mixin align-items-utilities(
+  $align-items,
+  $breakpoints: vars.$grid-breakpoints
+) {
+  @each $name, $value in $align-items {
+    .align-items-#{$name} {
+      align-items: $value !important;
+    }
+  }
+
+  @each $breakpoint, $width in $breakpoints {
+    @include mixin.media-breakpoint-up($breakpoint) {
+      @each $name, $value in $align-items {
+        .align-items-#{$name}-#{$breakpoint} {
+          align-items: $value !important;
+        }
+      }
+    }
+  }
+}
+
+@mixin align-self-utilities($align-self, $breakpoints: vars.$grid-breakpoints) {
+  @each $name, $value in $align-self {
+    .align-self-#{$name} {
+      align-self: $value !important;
+    }
+  }
+
+  @each $breakpoint, $width in $breakpoints {
+    @include mixin.media-breakpoint-up($breakpoint) {
+      @each $name, $value in $align-self {
+        .align-self-#{$name}-#{$breakpoint} {
+          align-self: $value !important;
+        }
+      }
+    }
+  }
+}
