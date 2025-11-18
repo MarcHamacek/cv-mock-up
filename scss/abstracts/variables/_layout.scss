@@ -33,3 +33,18 @@ $vertical-align: (
   sub: sub,
   text-top: text-top,
 );
+
+$align-items: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  stretch: stretch,
+);
+
+$align-self: (
+  auto: auto,
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  stretch: stretch,
+);

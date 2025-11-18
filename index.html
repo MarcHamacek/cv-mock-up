@@ -11,97 +11,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
-  <body class="m-auto fw-md w-100 w-75-xl">
-    <div class="d-flex flex-column flex-row-xl">
-      <!--Partie gauche du CV-->
-      <aside class="aside bg-primary w-100 w-35-xl">
-        <header
-          class="aside__header h-128 text-center my-4 d-flex justify-center"
-        >
+  <body class="m-auto fw-md w-100 w-90-xl">
+    <div class="bg-light">
+      <div
+        class="d-flex flex-column flex-row-md align-items-center justify-around-md text-center py-4"
+      >
+        <div>
           <img
-            class="aside__header--picture border-all-5-solid-transparent border-radius-circle"
+            class="border-all-5-solid-transparent border-radius-circle"
             src="images/profile-picture.png"
             alt="John Doe"
           />
-        </header>
-        <section class="aside__block">
-          <h3
-            class="aside__block--title py-2 text-primary bg-secondary text-uppercase fs-xl fw-bold text-center"
-          >
-            contact
-          </h3>
-          <address class="aside__block--contact m-3">
-            <p>Adresse <br />Paris, France</p>
-            <br />
-            <p>Téléphone <br />06 00 00 00 00</p>
-            <br />
-            <p>Email<br />nom@email.com</p>
-            <br />
-            <p>Site web<br />www.name.com</p>
-            <br />
-            <p>Skype<br />@nom_utilisateur</p>
-          </address>
-        </section>
-        <section class="aside__block">
-          <h3
-            class="aside__block--title py-2 text-primary bg-secondary text-uppercase fs-xl fw-bold text-center"
-          >
-            à propos de moi
-          </h3>
-          <article class="aside__block--article m-3">
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet, consecteturadipiscing elit. Fusce
-              eleifend, diam vitae faucibus varius, neque lectus viverra justo,
-              eget pharetra felis massa sit amet lacus. Nam pulvinar est vel
-              diam pellentesque suscipit. Fusce mollis, ligula id tincidunt
-              volutpat, erat ante porttitor nisi, id bibendum eros metus at
-              nisi. Morbi sed ligula dolor. Fusce mollis, ligula id tincidunt
-              volutpat, erat ante porttitor nisi, id bibendum eros metus at
-              nisi. Morbi sed ligula dolor.
-            </p>
-          </article>
-        </section>
-        <section class="aside__block">
-          <h3
-            class="aside__block--title py-2 text-primary bg-secondary text-uppercase fs-xl mt-3 fw-bold text-center"
-          >
-            loisirs
-          </h3>
-          <p
-            class="aside__block--icons vertical-top d-flex flex-row justify-around my-3 text-center"
-          >
-            <img
-              class="aside__block--icon h-64 w-64 border-all-2-solid-dark border-radius-circle p-1"
-              src="images/swimming.svg"
-              alt="swimming"
-            /><img
-              class="aside__block--icon h-64 w-64 border-all-2-solid-dark border-radius-circle p-1"
-              src="images/biking.svg"
-              alt="biking"
-            /><img
-              class="aside__block--icon h-64 w-64 border-all-2-solid-dark border-radius-circle p-1"
-              src="images/table-tennis.svg"
-              alt="table-tennis"
-            />
-          </p>
-        </section>
-      </aside>
-      <!--Partie principale du CV-->
-      <main class="main bg-light p-4 w-100 w-65-xl">
-        <header class="main__header h-128 my-4 text-uppercase">
-          <p class="main__header--name fs-xxl">
-            <strong class="main__header--firstname text-primary">john</strong>
+        </div>
+        <div class="d-flex flex-column text-uppercase">
+          <p class="fs-xxl">
+            <span class="text-primary fw-bold">john</span>
             doe
           </p>
-          <p class="main__header--job fs-xl fw-bold">
-            <span class="main__header--border_job border-bottom-2-solid-primary"
-              >Dével</span
-            >oppeur web freelance
+          <p class="fs-xl fw-bold">
+            <span class="border-bottom-2-solid-primary">Dével</span>oppeur web
+            freelance
           </p>
-        </header>
-        <section class="main__content mt-6">
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-row-lg">
+        <div class="w-100 w-35-lg">
+          <div class="p-2">
+            <h1
+              class="border-bottom-2-solid-primary mb-4 pb-2 fs-lg text-uppercase fw-bold"
+            >
+              <i
+                class="fa fa-address-card mr-4 text-primary"
+                aria-hidden="true"
+              ></i>
+              contact
+            </h1>
+            <div class="p-2">
+              <div class="mb-2 fw-medium d-flex flex-row">
+                <div class="w-16 h-16 text-center mr-3">
+                  <i
+                    class="fa fa-home text-primary align-self-center"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <p>Paris, France</p>
+              </div>
+              <div class="mb-2 fw-medium d-flex flex-row">
+                <div class="w-16 h-16 text-center mr-3">
+                  <i
+                    class="fa fa-phone text-primary align-self-center"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <p>06 00 00 00 00</p>
+              </div>
+              <div class="mb-2 fw-medium d-flex flex-row">
+                <div class="w-16 h-16 text-center mr-3">
+                  <i
+                    class="fa fa-envelope text-primary align-self-center"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <p>nom@email.com</p>
+              </div>
+              <div class="mb-2 fw-medium d-flex flex-row">
+                <div class="w-16 h-16 text-center mr-3">
+                  <i
+                    class="fa fa-paperclip text-primary align-self-center"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <p>www.name.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2">
+            <h1
+              class="border-bottom-2-solid-primary mb-4 pb-2 fs-lg text-uppercase fw-bold"
+            >
+              <i class="fa fa-user mr-4 text-primary" aria-hidden="true"></i>
+              à propos de moi
+            </h1>
+            <div class="p-2">
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet, consecteturadipiscing elit. Fusce
+                eleifend, diam vitae faucibus varius, neque lectus viverra
+                justo, eget pharetra felis massa sit amet lacus. Nam pulvinar
+                est vel diam pellentesque suscipit. Fusce mollis, ligula id
+                tincidunt volutpat, erat ante porttitor nisi, id bibendum eros
+                metus at nisi. Morbi sed ligula dolor. Fusce mollis, ligula id
+                tincidunt volutpat, erat ante porttitor nisi, id bibendum eros
+                metus at nisi. Morbi sed ligula dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 w-65-lg p-2">
           <h1
-            class="main__content--title border-bottom-2-solid-primary mb-4 pb-2 fs-lg text-uppercase fw-bold"
+            class="border-bottom-2-solid-primary mb-4 pb-2 fs-lg text-uppercase fw-bold"
+          >
+            <i class="fa fa-briefcase mr-4 text-primary" aria-hidden="true"></i
+            >expérience professionelle
+          </h1>
+          <div class="justify-between d-flex flex-column flex-row-md p-2">
+            <aside class="w-35">
+              <p class="fw-bold ml-3-xl">2016 - 2017</p>
+            </aside>
+            <div>
+              <h2 class="fs-md text-uppercase fw-bold">Web Developer</h2>
+              <p class="my-2 fw-medium">Design Incorporation, Paris (France)</p>
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                eleifend, diam vitae faucibus varius, neque lectus viverra
+                justo, eget pharetra felis massa sit amet lacus.
+              </p>
+            </div>
+          </div>
+          <div class="justify-between d-flex flex-column flex-row-md p-2">
+            <aside class="w-35">
+              <p class="fw-bold ml-3-xl">2016 - 2017</p>
+            </aside>
+            <div>
+              <h2 class="fs-md text-uppercase fw-bold">Web Developer</h2>
+              <p class="my-2 fw-medium">Design Incorporation, Paris (France)</p>
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                eleifend, diam vitae faucibus varius, neque lectus viverra
+                justo, eget pharetra felis massa sit amet lacus.
+              </p>
+            </div>
+          </div>
+          <div class="justify-between d-flex flex-column flex-row-md p-2">
+            <aside class="w-35">
+              <p class="fw-bold ml-3-xl">2016 - 2017</p>
+            </aside>
+            <div>
+              <h2 class="fs-md text-uppercase fw-bold">Web Developer</h2>
+              <p class="my-2 fw-medium">Design Incorporation, Paris (France)</p>
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                eleifend, diam vitae faucibus varius, neque lectus viverra
+                justo, eget pharetra felis massa sit amet lacus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column-reverse flex-row-lg">
+        <div class="w-100 w-35-lg">
+          <div class="p-2">
+            <h1
+              class="border-bottom-2-solid-primary mb-4 pb-2 fs-lg text-uppercase fw-bold"
+            >
+              <i class="fa fa-book mr-4 text-primary" aria-hidden="true"></i>
+              compétences
+            </h1>
+            <div class="p-2 d-flex flex-column">
+              <div class="d-flex flex-row justify-around mb-3">
+                <img
+                  class="h-64 w-64"
+                  src="images/html5_logo.svg"
+                  alt="html5"
+                />
+                <img class="h-64 w-64" src="images/css3_logo.svg" alt="css3" />
+                <img class="h-64 w-64" src="images/sass_logo.svg" alt="sass" />
+              </div>
+              <div class="d-flex flex-row justify-around mb-3">
+                <img
+                  class="h-64 w-64"
+                  src="images/javascript_logo.svg"
+                  alt="javascript"
+                />
+                <img
+                  class="h-64 w-64"
+                  src="images/typescript_logo.svg"
+                  alt="typescript"
+                />
+                <img
+                  class="h-64 w-64"
+                  src="images/nodejs_logo.svg"
+                  alt="nodejs"
+                />
+              </div>
+              <div class="d-flex flex-row justify-around mb-3">
+                <img
+                  class="h-64 w-64"
+                  src="images/react_logo.svg"
+                  alt="react"
+                />
+                <img
+                  class="h-64 w-64"
+                  src="images/vuejs_logo.svg"
+                  alt="vuejs"
+                />
+                <img
+                  class="h-64 w-64"
+                  src="images/prisma_logo.svg"
+                  alt="prisma"
+                />
+              </div>
+              <div class="d-flex flex-row justify-around mb-3">
+                <img
+                  class="h-64 w-64"
+                  src="images/mysql_logo.svg"
+                  alt="mysql"
+                />
+                <img
+                  class="h-64 w-64"
+                  src="images/mongodb_logo.svg"
+                  alt="mongodb"
+                />
+                <img
+                  class="h-64 w-64"
+                  src="images/docker_logo.svg"
+                  alt="docker"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 w-65-lg p-2">
+          <h1
+            class="border-bottom-2-solid-primary mb-4 pb-2 fs-lg text-uppercase fw-bold"
           >
             <i
               class="fa fa-graduation-cap mr-4 text-primary"
@@ -109,176 +240,36 @@
             ></i
             >formation
           </h1>
-          <section
-            class="main__content--item justify-between d-flex flex-column flex-row-md py-3"
-          >
-            <aside class="main__content--item_date w-auto w-50-md">
-              <i
-                class="puce_2 h-12 w-12 d-inline-block bg-primary bg-primary border-radius-circle mr-3"
-              ></i>
-              <strong class="fw-bold">2016 - 2017</strong>
-              <p class="main__content--item_city ml-3 fw-semi-bold">Paris</p>
+          <div class="justify-between d-flex flex-column flex-row-md p-2">
+            <aside class="w-35">
+              <p class="fw-bold ml-3-xl">2016 - 2017</p>
             </aside>
-            <article class="main__content--item_article">
-              <h2
-                class="main__content--item_title fs-md text-uppercase fw-bold"
-              >
-                openclassrooms
-              </h2>
-              <p class="main__content--item_job my-2">Junior Web Developer</p>
+            <div>
+              <h2 class="fs-md text-uppercase fw-bold">Junior Web Developer</h2>
+              <p class="my-2 fw-medium">OpenClassrooms, Paris (France)</p>
               <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
                 justo, eget pharetra felis massa sit amet lacus.
               </p>
-            </article>
-          </section>
-          <section
-            class="main__content--item justify-between d-flex flex-column flex-row-md py-3"
-          >
-            <aside class="main__content--item_date w-auto w-50-md">
-              <p>
-                <i
-                  class="puce_2 h-12 w-12 d-inline-block bg-primary border-radius-circle mr-3"
-                ></i
-                ><strong class="fw-bold">2014 - 2016</strong>
-              </p>
-              <p class="main__content--item_city ml-3 fw-semi-bold">Orléans</p>
+            </div>
+          </div>
+          <div class="justify-between d-flex flex-column flex-row-md p-2">
+            <aside class="w-35">
+              <p class="fw-bold ml-3-xl">2016 - 2017</p>
             </aside>
-            <article class="main__content--item_article">
-              <h2
-                class="main__content--item_title fs-md text-uppercase fw-bold"
-              >
-                university of lorem
-              </h2>
-              <p class="main__content--item_job my-2">Graphique Designer</p>
+            <div>
+              <h2 class="fs-md text-uppercase fw-bold">Web Developer</h2>
+              <p class="my-2 fw-medium">University of Lorem, Orléans</p>
               <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 eleifend, diam vitae faucibus varius, neque lectus viverra
                 justo, eget pharetra felis massa sit amet lacus.
               </p>
-            </article>
-          </section>
-        </section>
-        <section class="main__content">
-          <h1
-            class="main__content--title border-bottom-2-solid-primary mb-4 pb-2 fs-lg text-uppercase fw-bold"
-          >
-            <i class="fa fa-briefcase mr-4 text-primary" aria-hidden="true"></i
-            >expérience professionelle
-          </h1>
-          <section
-            class="main__content--item justify-between d-flex flex-column flex-row-md py-3"
-          >
-            <aside class="main__content--item_date w-auto w-50-md">
-              <p>
-                <i
-                  class="puce_2 h-12 w-12 d-inline-block bg-primary border-radius-circle mr-3"
-                ></i>
-                <strong class="fw-bold">2016 - 2017</strong>
-              </p>
-              <p class="main__content--item_city ml-3 fw-semi-bold">Paris</p>
-            </aside>
-            <article class="main__content--item_article">
-              <h2
-                class="main__content--item_title fs-md text-uppercase fw-bold"
-              >
-                design inc.
-              </h2>
-              <p class="main__content--item_job my-2">Web Developer</p>
-              <p class="text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                eleifend, diam vitae faucibus varius, neque lectus viverra
-                justo, eget pharetra felis massa sit amet lacus.
-              </p>
-            </article>
-          </section>
-          <section
-            class="main__content--item justify-between d-flex flex-column flex-row-md py-3"
-          >
-            <aside class="main__content--item_date w-auto w-50-md">
-              <p>
-                <i
-                  class="puce_2 h-12 w-12 d-inline-block bg-primary border-radius-circle mr-3"
-                ></i
-                ><strong class="fw-bold">2014 - 2016</strong>
-              </p>
-              <p class="main__content--item_city ml-3 fw-semi-bold">Paris</p>
-            </aside>
-            <article class="main__content--item_article">
-              <h2
-                class="main__content--item_title fs-md text-uppercase fw-bold"
-              >
-                design inc.
-              </h2>
-              <p class="main__content--item_job my-2">Graphique Designer</p>
-              <p class="text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                eleifend, diam vitae faucibus varius, neque lectus viverra
-                justo, eget pharetra felis massa sit amet lacus.
-              </p>
-            </article>
-          </section>
-          <section
-            class="main__content--item justify-between d-flex flex-column flex-row-md py-3"
-          >
-            <aside class="main__content--item_date w-auto w-50-md">
-              <p>
-                <i
-                  class="puce_2 h-12 w-12 d-inline-block d-inline-block bg-primary border-radius-circle mr-3"
-                ></i
-                ><strong class="fw-bold">2014 - 2016</strong>
-              </p>
-              <p class="main__content--item_city ml-3 fw-semi-bold">Paris</p>
-            </aside>
-            <article class="main__content--item_article">
-              <h2
-                class="main__content--item_title fs-md text-uppercase fw-bold"
-              >
-                design inc.
-              </h2>
-              <p class="main__content--item_job my-2">Graphique Designer</p>
-              <p class="text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                eleifend, diam vitae faucibus varius, neque lectus viverra
-                justo, eget pharetra felis massa sit amet lacus.
-              </p>
-            </article>
-          </section>
-        </section>
-        <section class="main__content">
-          <h1
-            class="main__content--title border-bottom-2-solid-primary mb-4 pb-2 fs-lg text-uppercase fw-bold"
-          >
-            <i class="fa fa-pencil mr-4 text-primary" aria-hidden="true"></i
-            >recommandations
-          </h1>
-          <section
-            class="main__content--recommandations d-flex flex-column flex-row-md my-4"
-          >
-            <article
-              class="main__content--recommandation_item ml-5-md ml-0 mt-3 mt-0-md"
-            >
-              <h4 class="fw-bold text-uppercase">maxime kieman</h4>
-              <address>
-                <strong class="fw-bold"
-                  >Directeur, Mon agence <br />Téléphone : <br /></strong
-                >Email : name@email.com
-              </address>
-            </article>
-            <article
-              class="main__content--recommandation_item ml-5-md ml-0 mt-3 mt-0-md"
-            >
-              <h4 class="fw-bold text-uppercase">maxime kieman</h4>
-              <address>
-                <strong class="fw-bold"
-                  >Directeur, Mon agence <br />Téléphone : <br /></strong
-                >Email : name@email.com
-              </address>
-            </article>
-          </section>
-        </section>
-      </main>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
